@@ -1,0 +1,37 @@
+# Scaffolded Question(s) for Jasmine Bailey
+**Scaffolding Level:** moderate | **Reading Level:** Grade 3 (iReady) | **Informational Text:** Grade 2
+
+## Scaffolding Rationale
+Jasmine's IEP benchmarks include: accurately annotating text, answering literal comprehension questions, writing claims with evidence, and finding textual evidence. Scaffolds should BUILD these skills, not bypass them.
+
+Key considerations:
+- She can decode grade-level words but struggles with literal and inferential comprehension
+- She benefits from graphic organizers and checklists (starting to find value in them)
+- Writing is stronger with 1:1 support; independent writing is ~50% accuracy
+- She needs to use reference sheets and class notes more effectively (Math benchmark 3, applicable to ELA too)
+
+## SA-1: Short Answer
+**Original Question:** You have just read "What is community and why is it important?" by Toby Lowe. Explain what Lowe means when he says a community is "a group of people who share an identity-forming narrative." [RI.2]
+
+Make sure to incorporate relevant unit vocabulary in your writing.
+
+Self-Checklist: Did I fully answer the prompt? Did I include at least two details from the text? Did I incorporate relevant unit vocabulary?
+
+### Scaffolded Version (moderate)
+
+**Graphic Organizer for Short Answer:**
+
+| Step | What to Write | Where to Find It |
+| --- | --- | --- |
+| 1. Claim | What does "identity-forming narrative" mean? | Paragraph 3-4 |
+| 2. Evidence #1 | Quote or paraphrase from the text | Paragraph 4 or 9 |
+| 3. Explain Evidence #1 | How does this help explain the definition? | Your own words |
+| 4. Evidence #2 | Another quote or detail from the text | Paragraphs 5-7 |
+| 5. Explain Evidence #2 | How does this connect? | Your own words |
+
+**Sentence starters:**
+- Claim: "When Lowe says a community shares an 'identity-forming narrative,' he means that _____."
+- Evidence: "For example, Lowe explains that _____." (paragraph ___)
+- Analysis: "This shows that an identity-forming narrative is _____ because _____."
+
+**Unit vocabulary to include:** narrative, aspect, moral, specific
