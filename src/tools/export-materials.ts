@@ -285,6 +285,18 @@ function buildPausePlanProceed(): string[] {
   lines.push("### PROCEED");
   lines.push("Write your answer. Use evidence from the text.");
   lines.push("");
+  lines.push(
+    "________________________________________________________________________"
+  );
+  lines.push("");
+  lines.push(
+    "________________________________________________________________________"
+  );
+  lines.push("");
+  lines.push(
+    "________________________________________________________________________"
+  );
+  lines.push("");
   lines.push("---");
   lines.push("");
 
@@ -366,7 +378,10 @@ function buildTeacherCheatSheet(): string[] {
   }
 
   lines.push("### MC Answer Key");
-  lines.push("1. D &nbsp; 2. C &nbsp; 3. B &nbsp; 4. C");
+  lines.push("");
+  lines.push("| MC-1 | MC-2 | MC-3 | MC-4 |");
+  lines.push("| --- | --- | --- | --- |");
+  lines.push("| D | C | B | C |");
   lines.push("");
   lines.push("---");
   lines.push("");

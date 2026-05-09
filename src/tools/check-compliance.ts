@@ -70,11 +70,23 @@ export function checkCompliance(rawInput: CheckComplianceInput): string {
   ).length;
   const total = complianceItems.length;
 
-  sections.push("## Summary");
-  sections.push(`- **Fully addressed:** ${complianceItems.filter((c) => c.addressed === "YES").length}/${total}`);
-  sections.push(`- **Partially addressed:** ${complianceItems.filter((c) => c.addressed === "PARTIAL").length}/${total}`);
-  sections.push(`- **Needs implementation plan:** ${gaps}/${total}`);
+  const fullyCount = complianceItems.filter((c) => c.addressed === "YES").length;
+  const partialCount = complianceItems.filter((c) => c.addressed === "PARTIAL").length;
+
+  sections.push("## Compliance Summary");
   sections.push("");
+  sections.push(`Out of ${total} legally mandated IEP accommodations, this lesson plan currently:`);
+  sections.push("");
+  sections.push(`- **Fully addresses ${fullyCount}/${total}** — These accommodations are built into the lesson structure and require no additional planning.`);
+  sections.push(`- **Partially addresses ${partialCount}/${total}** — The lesson creates opportunities for these accommodations but doesn't explicitly plan for them. The teacher or SE teacher must actively implement them (e.g., choosing to repeat directions even though the lesson doesn't prompt it).`);
+  sections.push(`- **Has no plan for ${gaps}/${total}** — These accommodations are legally required but completely absent from the lesson. Failing to implement these risks a compliance violation. See recommendations below.`);
+  sections.push("");
+  if (gaps > 0) {
+    sections.push(
+      `**Bottom line:** This lesson needs ${gaps} implementation plans added before it is compliant with Jasmine's IEP. The highest-risk gaps are the timing accommodations (frequent breaks and scheduled breaks), which are critical for preventing the frustration-shutdown cycle.`
+    );
+    sections.push("");
+  }
 
   if (gaps > 0 && input.include_recommendations) {
     sections.push("## Recommendations for Gaps");
