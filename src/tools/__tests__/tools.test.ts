@@ -1,5 +1,5 @@
 /**
- * Smoke tests for all 9 Waypoint MCP tools.
+ * Tests for all 10 Waypoint MCP tools + sanitization utilities (46 tests).
  *
  * Each test verifies:
  * 1. The tool runs without throwing
@@ -13,6 +13,7 @@
  */
 
 import { describe, it, expect } from "vitest";
+import { sanitize, escapeTableCell, stripControlChars } from "../../sanitize.js";
 import { generateModifications } from "../generate-modifications.js";
 import { matchAccommodations } from "../match-accommodations.js";
 import { scaffoldQuestion } from "../scaffold-questions.js";
@@ -131,6 +132,13 @@ describe("scaffold_question", () => {
     expect(result).toContain("moderate");
     expect(result).toContain("Teacher Edition");
   });
+
+  it("returns helpful error for invalid question ID", () => {
+    const result = scaffoldQuestion({ question_id: "FAKE-99" } as any);
+    expect(result).toContain("FAKE-99");
+    expect(result).toContain("not found");
+    expect(result).toContain("Available IDs");
+  });
 });
 
 describe("check_accommodation_compliance", () => {
@@ -140,6 +148,9 @@ describe("check_accommodation_compliance", () => {
     expect(result).toContain("YES");
     expect(result).toContain("PARTIAL");
     expect(result).toContain("NEEDS PLAN");
+    expect(result).toContain("Compliance Summary");
+    expect(result).toContain("legally mandated");
+    expect(result).toContain("Bottom line");
   });
 
   it("includes MCAS testing accommodation cross-reference", () => {
@@ -294,6 +305,15 @@ describe("generate_take_home", () => {
     expect(result).toContain("SA-1");
     expect(result).toContain("MC-4");
   });
+
+  it("returns error for invalid question IDs", () => {
+    const result = generateTakeHome({
+      unfinished_items: ["FAKE-99"],
+    } as any);
+    expect(result).toContain("Error");
+    expect(result).toContain("FAKE-99");
+    expect(result).toContain("Available IDs");
+  });
 });
 
 describe("generate_classroom_summary", () => {
@@ -359,5 +379,29 @@ describe("generate_sub_card", () => {
     const result = generateSubCard({ include_lesson_specifics: false });
     expect(result).not.toContain("Today's Lesson Notes");
     expect(result).toContain("The One Thing to Know");
+  });
+});
+
+describe("sanitization utilities", () => {
+  it("escapes pipe characters in table cells", () => {
+    expect(escapeTableCell("head down | bathroom")).toBe(
+      "head down \\| bathroom"
+    );
+  });
+
+  it("collapses newlines in table cells", () => {
+    expect(escapeTableCell("line one\nline two")).toBe("line one line two");
+  });
+
+  it("strips control characters", () => {
+    expect(stripControlChars("hello\x00world\x07")).toBe("helloworld");
+  });
+
+  it("preserves normal text", () => {
+    expect(sanitize("Jasmine Bailey")).toBe("Jasmine Bailey");
+  });
+
+  it("handles combined sanitization", () => {
+    expect(sanitize("Name | Grade\x00\n7")).toBe("Name \\| Grade 7");
   });
 });

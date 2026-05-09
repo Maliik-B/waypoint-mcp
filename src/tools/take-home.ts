@@ -99,6 +99,15 @@ export function generateTakeHome(rawInput: TakeHomeInput): string {
     sections.push("");
   }
 
+  // Validate all question IDs upfront
+  const validIds = lesson.questions.map((q) => q.id);
+  const invalidIds = input.unfinished_items.filter(
+    (id) => !validIds.includes(id)
+  );
+  if (invalidIds.length > 0) {
+    return `Error: Unknown question ID(s): ${invalidIds.join(", ")}. Available IDs: ${validIds.join(", ")}`;
+  }
+
   // For each unfinished item, generate a take-home version
   for (const itemId of input.unfinished_items) {
     const question = lesson.questions.find((q) => q.id === itemId);

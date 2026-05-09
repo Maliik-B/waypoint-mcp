@@ -1,8 +1,27 @@
 # Waypoint IEP Differentiation Server
 
+![TypeScript](https://img.shields.io/badge/TypeScript-strict-blue)
+![Tests](https://img.shields.io/badge/tests-48%20passing-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Node](https://img.shields.io/badge/node-%3E%3D18-blue)
+![MCP](https://img.shields.io/badge/MCP-1.0-purple)
+
 An MCP server that helps teachers differentiate instruction for students with Individualized Education Programs (IEPs). Given a lesson and a student's IEP, the server provides Claude with the structured context it needs to produce **specific, actionable instructional modifications** that a teacher can use in the classroom without further editing.
 
 Built for the [Waypoint Learning Challenge](https://github.com/igoldstein19/waypoint-challenge).
+
+## Table of Contents
+
+- [Quick Start](#quick-start)
+- [Architecture](#architecture)
+  - [Data Structuring](#data-structuring-the-key-decision)
+  - [Tools](#tools-what-claude-can-do)
+  - [Multi-Student Design](#multi-student-design)
+  - [Prompts](#prompts-pre-built-workflows)
+  - [Trade-offs](#trade-offs)
+- [Example Output](#example-output-1-accommodation-activity-matrix-with-self-regulation-checkpoints)
+- [Domain Understanding](#domain-understanding)
+- [Project Structure](#project-structure)
 
 ## Quick Start
 
@@ -53,6 +72,41 @@ In Claude Desktop, use the `differentiate-lesson` prompt to generate a complete 
 ---
 
 ## Architecture
+
+```
+                         Waypoint MCP Server
+  ┌─────────────────────────────────────────────────────────────┐
+  │                                                             │
+  │  ┌──────────┐   ┌──────────────┐   ┌─────────────────────┐ │
+  │  │ IEP PDF  │──>│  Structured  │──>│  12 MCP Resources   │ │
+  │  │ (36 pgs) │   │  TypeScript  │   │  iep://{student}/   │ │
+  │  └──────────┘   │  Data Files  │   │  lesson://{lesson}/ │ │
+  │                 └──────────────┘   └────────┬────────────┘ │
+  │  ┌──────────┐          │                    │              │
+  │  │ Lesson   │──────────┘                    ▼              │
+  │  │ Plan PDF │              ┌────────────────────────────┐  │
+  │  └──────────┘              │     10 Tools (Zod schemas) │  │
+  │                            │  ┌─────────────────────┐   │  │
+  │                            │  │ scaffold_question    │   │  │
+  │                            │  │ match_accommodations │   │  │
+  │                            │  │ check_compliance     │   │  │
+  │                            │  │ export_materials     │   │  │
+  │                            │  │ generate_take_home   │   │  │
+  │                            │  │ ...5 more            │   │  │
+  │                            │  └─────────────────────┘   │  │
+  │                            └─────────────┬──────────────┘  │
+  │                                          │                 │
+  │                            ┌─────────────▼──────────────┐  │
+  │                            │  6 Prompts (workflows)     │  │
+  │                            └────────────────────────────┘  │
+  └──────────────────────────────┬──────────────────────────────┘
+                                 │ stdio transport
+                                 ▼
+                          ┌─────────────┐
+                          │   Claude    │──> Classroom-ready
+                          │   Desktop   │    Markdown output
+                          └─────────────┘
+```
 
 ### The Core Problem
 
@@ -459,16 +513,18 @@ Every output is designed for a teacher's real workflow:
 ## Project Structure
 
 ```
-demo.ts                 # CLI demo: run `npm run demo` to see tool output
+demo.ts                   # CLI demo: run `npm run demo` to see tool output
+LICENSE                   # MIT license
 src/
-  index.ts              # MCP server entry point (resources, tools, prompts)
-  types.ts              # Domain types (IEP, lesson data models)
+  index.ts                # MCP server entry point (resources, tools, prompts)
+  types.ts                # Domain types (IEP, lesson data models)
+  sanitize.ts             # Input sanitization for IEP PII in Markdown output
   data/
-    iep-structured.ts   # Jasmine's IEP parsed into structured data
-    lesson-structured.ts # Lesson plan parsed into structured data
+    iep-structured.ts     # Jasmine's IEP parsed into structured data
+    lesson-structured.ts  # Lesson plan parsed into structured data
   resources/
-    iep.ts              # 6 IEP resources (profile, levels, goals, accommodations, services, full)
-    lesson.ts           # 6 lesson resources (overview, text, questions, activities, vocab, full)
+    iep.ts                # 6 IEP resources (profile, levels, goals, accommodations, services, full)
+    lesson.ts             # 6 lesson resources (overview, text, questions, activities, vocab, full)
   tools/
     generate-modifications.ts  # UDL-organized lesson modifications
     match-accommodations.ts    # Accommodation-activity matrix + self-reg checkpoints
@@ -480,13 +536,14 @@ src/
     take-home.ts               # Modified take-home for unfinished classwork
     classroom-summary.ts       # Multi-student classroom-at-a-glance
     sub-card.ts                # Substitute teacher emergency card
-    __tests__/tools.test.ts    # 41 smoke tests across all 10 tools
+    __tests__/tools.test.ts    # 48 tests: tools + sanitization + error handling
   prompts/
-    index.ts            # 6 prompt templates for teacher workflows
+    index.ts              # 6 prompt templates for teacher workflows
 data/
-  iep.pdf               # Original IEP document
-  lesson.pdf             # Original lesson plan
+  iep.pdf                 # Original IEP document
+  lesson.pdf              # Original lesson plan
 examples/
+  README.md                     # Index with tool call parameters for each example
   accommodation-matrix.md       # Full accommodation-activity matrix with self-reg checkpoints
   all-questions-scaffolded.md   # All 16 questions scaffolded at moderate level
   classroom-summary.md          # Classroom-at-a-glance with multi-student design
