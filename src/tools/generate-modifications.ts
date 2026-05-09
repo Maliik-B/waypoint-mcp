@@ -49,8 +49,9 @@ export type GenerateModificationsInput = z.infer<
 >;
 
 export function generateModifications(
-  input: GenerateModificationsInput
+  rawInput: GenerateModificationsInput
 ): string {
+  const input = generateModificationsSchema.parse(rawInput);
   const iep = jasmineBaileyIEP;
   const lesson = communityLesson;
 
@@ -137,12 +138,15 @@ export function generateModifications(
   // Lesson context
   sections.push("## Lesson Context");
   sections.push(`**Title:** ${lesson.metadata.title}`);
-  sections.push(`**Unit:** ${lesson.metadata.unit}`);
+  sections.push(`**Unit:** ${lesson.metadata.unit} (Lesson ${lesson.metadata.lessonNumber} of ${lesson.metadata.totalLessonsInUnit})`);
   sections.push(`**Standard:** ${lesson.metadata.standards.join(", ")}`);
   sections.push(
     `**Skill Focus:** ${lesson.metadata.skillFocus}`
   );
   sections.push(`**Total Duration:** ${lesson.metadata.totalDuration}`);
+  sections.push(
+    `**Unit Importance:** This is the foundational lesson. The community definition introduced here is referenced throughout the remaining ${(lesson.metadata.totalLessonsInUnit || 8) - 1} lessons. If the student does not grasp this definition, subsequent lessons will be significantly harder.`
+  );
   sections.push("");
 
   // Specific activity context

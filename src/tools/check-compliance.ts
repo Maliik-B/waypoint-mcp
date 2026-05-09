@@ -27,7 +27,8 @@ export const checkComplianceSchema = z.object({
 
 export type CheckComplianceInput = z.infer<typeof checkComplianceSchema>;
 
-export function checkCompliance(input: CheckComplianceInput): string {
+export function checkCompliance(rawInput: CheckComplianceInput): string {
+  const input = checkComplianceSchema.parse(rawInput);
   const iep = jasmineBaileyIEP;
   const lesson = communityLesson;
 
@@ -104,6 +105,35 @@ export function checkCompliance(input: CheckComplianceInput): string {
   );
   sections.push(
     "4. **Transitions between activities:** Each transition is a potential point where Jasmine may seek to leave the room or disengage. She asks to use the restroom multiple times when struggling."
+  );
+  sections.push("");
+
+  // MCAS testing accommodation cross-reference
+  sections.push("## MCAS Testing Accommodation Cross-Reference");
+  sections.push("");
+  sections.push(
+    "Jasmine's MCAS testing accommodations validate and reinforce her classroom accommodations:"
+  );
+  sections.push("");
+  sections.push(
+    "| MCAS Code | Testing Accommodation | Classroom Equivalent | Consistent? |"
+  );
+  sections.push("| --- | --- | --- | --- |");
+  sections.push(
+    "| DF1 | Small Group test administration | Small group (as needed) | YES |"
+  );
+  sections.push(
+    "| DF3 | Frequent brief supervised breaks | Frequent breaks, Scheduled breaks | YES |"
+  );
+  sections.push(
+    "| DF4 | Separate or alternate test location | Sit in the front of the room | YES |"
+  );
+  sections.push(
+    "| A9 | Graphic organizer, checklist, or reference sheet | Reference sheets, graphic organizers, and checklists | YES |"
+  );
+  sections.push("");
+  sections.push(
+    "All MCAS accommodations are consistent with classroom accommodations. Any classroom accommodation that aligns with an MCAS accommodation is especially important to implement consistently, as it ensures Jasmine is practicing with the same supports she'll use during state testing."
   );
   sections.push("");
 

@@ -1,0 +1,73 @@
+# IEP Accommodation Compliance Check
+**Student:** Jasmine Bailey | **Lesson:** What is 'Community' and why is it important?
+**Date:** 5/9/2026 | **Subject:** ELA | **Duration:** 45 minutes
+
+## Accommodation Compliance Matrix
+
+| # | Accommodation | Category | Addressed? | Risk Level | Notes |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Repeat directions | Presentation | PARTIAL | MEDIUM | Lesson has teacher-led facilitation but no explicit direction repetition built in |
+| 2 | Reminders to pause, plan, proceed | Presentation | NEEDS PLAN | HIGH | Not built into lesson structure; critical for writing tasks |
+| 3 | Copy of teacher's notes | Presentation | PARTIAL | MEDIUM | Lesson slide deck exists but no printed handout specified for Jasmine |
+| 4 | Reference sheets, graphic organizers, checklists | Presentation | PARTIAL | HIGH | Self-Checklist exists for short answer but no graphic organizer for the complex reading |
+| 5 | Extra time | Timing | PARTIAL | MEDIUM | 45-minute lesson with tight pacing; no explicit extra time built in |
+| 6 | Frequent breaks | Timing | NEEDS PLAN | HIGH | No breaks built into the 45-minute lesson |
+| 7 | Scheduled breaks | Timing | NEEDS PLAN | HIGH | Same as frequent breaks; needs explicit scheduling |
+| 8 | 1:1 check-ins | Setting | PARTIAL | MEDIUM | SE teacher is present daily but check-in timing not specified in lesson |
+| 9 | Reminder to remain engaged | Setting | PARTIAL | HIGH | No engagement monitoring plan for a student who quietly disengages |
+| 10 | Small group (as needed) | Setting | YES | LOW | Lesson offers multiple facilitation options including small groups and partner reading |
+| 11 | Sit in the front of the room | Setting | YES | LOW | Simple seating arrangement; no lesson modification needed |
+
+## Summary
+- **Fully addressed:** 2/11
+- **Partially addressed:** 6/11
+- **Needs implementation plan:** 3/11
+
+## Recommendations for Gaps
+
+### Reminders to pause, plan, proceed
+Create a laminated 'Pause, Plan, Proceed' card for Jasmine's desk. Before each writing question (DR-1B, DR-2A, DR-3B, SA-1), cue Jasmine: 'Pause -- what is the question asking? Plan -- find the paragraph. Proceed -- write.' The SE teacher can model this during the first During Reading question.
+
+### Frequent breaks
+Schedule 2 brief breaks: (1) After During Reading Questions before Independent Practice (~min 20), (2) After MC questions before short answer (~min 30). Mark both on Jasmine's activity checklist so she can see them coming. Each break is 1-2 minutes: water, stretching, or a movement break.
+
+### Scheduled breaks
+See frequent breaks above. Additionally, post the lesson schedule with break times on the board or on Jasmine's desk: Intro (5 min) -> Reading (15 min) -> BREAK -> MC Questions (8 min) -> BREAK -> Writing (12 min) -> Discussion (5 min).
+
+## Lesson-Specific Risk Assessment
+
+### High-Risk Moments for Jasmine in This Lesson
+
+1. **Paragraph 2 (bullet list):** Dense informational text with 6 complex bullet points. At Grade 2 informational text comprehension, this is the hardest section for Jasmine. She may disengage here.
+2. **Independent Practice (20 min):** Longest sustained independent work block. Her low reading/writing stamina and tendency to avoid when frustrated make this the highest-risk activity.
+3. **Short Answer Prompt:** Open-ended writing requiring claim + evidence + analysis. Without scaffolding, she is likely to produce 0-50% accuracy work or disengage entirely.
+4. **Transitions between activities:** Each transition is a potential point where Jasmine may seek to leave the room or disengage. She asks to use the restroom multiple times when struggling.
+
+## MCAS Testing Accommodation Cross-Reference
+
+Jasmine's MCAS testing accommodations validate and reinforce her classroom accommodations:
+
+| MCAS Code | Testing Accommodation | Classroom Equivalent | Consistent? |
+| --- | --- | --- | --- |
+| DF1 | Small Group test administration | Small group (as needed) | YES |
+| DF3 | Frequent brief supervised breaks | Frequent breaks, Scheduled breaks | YES |
+| DF4 | Separate or alternate test location | Sit in the front of the room | YES |
+| A9 | Graphic organizer, checklist, or reference sheet | Reference sheets, graphic organizers, and checklists | YES |
+
+All MCAS accommodations are consistent with classroom accommodations. Any classroom accommodation that aligns with an MCAS accommodation is especially important to implement consistently, as it ensures Jasmine is practicing with the same supports she'll use during state testing.
+
+## IEP Goal Alignment
+
+This lesson directly supports the following IEP goals and benchmarks:
+
+### ELA Goal (Goal 3)
+- **Benchmark 1 (annotating):** During Reading Questions require annotation for paragraphs 2, 5-7, 8, 10-11
+- **Benchmark 2 (literal comprehension):** MC questions 1-4 test literal comprehension
+- **Benchmark 3 (writing claims):** Short answer prompt requires a claim about 'identity-forming narrative'
+- **Benchmark 4 (textual evidence):** Short answer requires at least 2 text details
+- **Benchmark 5 (analysis):** Short answer requires explaining how evidence connects to claim
+
+### Self-Regulation Goal (Goal 1)
+- **Benchmark 1 (recognizing frustration cues):** Teacher should watch for head down, restlessness, bathroom requests
+- **Benchmark 2 (requesting strategies):** Encourage Jasmine to ask for a break rather than shutting down
+- **Benchmark 3 (using strategies and re-engaging):** After any break, help Jasmine identify which strategy she used and return to the task

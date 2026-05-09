@@ -62,10 +62,11 @@
 
 ## Lesson Context
 **Title:** What is 'Community' and why is it important?
-**Unit:** Unit 1: Community and Belonging
+**Unit:** Unit 1: Community and Belonging (Lesson 1 of 8)
 **Standard:** RI.7.2
 **Skill Focus:** Determining and summarizing the central idea of a text and identifying the details that develop it
 **Total Duration:** 45 minutes
+**Unit Importance:** This is the foundational lesson. The community definition introduced here is referenced throughout the remaining 7 lessons. If the student does not grasp this definition, subsequent lessons will be significantly harder.
 
 ## All Activities
 ### Intro Slide Deck (5 minutes, whole-class)

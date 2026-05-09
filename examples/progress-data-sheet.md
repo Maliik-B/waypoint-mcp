@@ -1,0 +1,146 @@
+# IEP Progress Data Collection Sheet
+**Student:** Jasmine Bailey | **Lesson:** What is 'Community' and why is it important?
+**Date:** __________ | **Observer:** __________ | **Period:** __________
+**Subject:** ELA | **Duration:** 45 minutes
+
+## Goal 3: ELA
+**Annual Target:** Jasmine will increase her ability to comprehend complex texts to independently answer literal and inferential comprehension questions or writing prompts that meet grade-level rubrics, from 50% to 75%.
+**Baseline:** From 50% to 75%
+**Measurement:** Work Samples, Curriculum Based Assessment, Rubrics
+
+### Benchmark Data Collection
+
+#### Benchmark 1: Accurately annotate text
+**Observe during:** During Reading (min 5-20)
+**What to look for:** Does Jasmine annotate the text for the prompt focus (supporting details, key ideas)?
+
+| Question | Did Jasmine Annotate? | Accuracy | Notes |
+| --- | --- | --- | --- |
+| DR-1A (main idea, P1) | Y / N | Correct / Partial / Incorrect | |
+| DR-1C (definition, P2) | Y / N | Correct / Partial / Incorrect | |
+| DR-2A (testing definition, P5-7) | Y / N | Correct / Partial / Incorrect | |
+| DR-3A (Newcastle narrative, P8) | Y / N | Correct / Partial / Incorrect | |
+| DR-4 (importance, P10-11) | Y / N | Correct / Partial / Incorrect | |
+
+**Annotation Score:** _____ / 5 correct annotations
+
+#### Benchmark 2: Answer literal comprehension questions
+**Observe during:** Independent Practice (min 20-28)
+**What to look for:** Can Jasmine independently answer MC questions about main idea, key details?
+
+| Question | Jasmine's Answer | Correct Answer | Correct? |
+| --- | --- | --- | --- |
+| MC-1 | _____ | D | Y / N |
+| MC-2 | _____ | C | Y / N |
+| MC-3 | _____ | B | Y / N |
+| MC-4 | _____ | C | Y / N |
+
+**MC Score:** _____ / 4 = _____% 
+**Support used:** None / Reference sheet / Teacher read aloud / Small group
+
+#### Benchmark 3: Write a claim answering the question
+**Observe during:** Independent Practice (min 28-40)
+**What to look for:** SA-1 response
+
+| Criteria | Rating | Evidence |
+| --- | --- | --- |
+| Claim answers the question | 0 (none) / 1 (partial) / 2 (complete) | Quote Jasmine's claim: "_____" |
+| Claim addresses all parts | 0 / 1 / 2 | Does it mention both "identity-forming" AND "narrative"? Y / N |
+
+#### Benchmark 4: Find effective pieces of textual evidence
+
+| Evidence Piece | Source Paragraph | Relevant to Claim? |
+| --- | --- | --- |
+| 1. _____ | P_____ | Y / N |
+| 2. _____ | P_____ | Y / N |
+| 3. _____ | P_____ | Y / N (if provided) |
+
+**Evidence Score:** _____ / 3 effective pieces
+
+#### Benchmark 5: Write analysis connecting evidence to claim
+
+| Criteria | Rating |
+| --- | --- |
+| Explains HOW evidence relates to claim | 0 (none) / 1 (attempted) / 2 (clear connection) |
+| Uses reasoning, not just restating | 0 (restates) / 1 (some reasoning) / 2 (strong reasoning) |
+
+**Overall SA-1 Score:** _____ / 10 = _____% (claim: /4 + evidence: /3 + analysis: /3)
+
+---
+
+## Goal 1: Self-Regulation
+**Annual Target:** Jasmine will improve her self-regulation skills by using a taught calming strategy (deep breathing, movement break, fidget tool, sensory tool, or grounding exercise) to calm her body and re-engage back to tasks in 4 out of 5 opportunities (80%).
+**Baseline:** 80% of opportunities
+
+### Frustration/Dysregulation Events Log
+*Record each time Jasmine shows signs of frustration or dysregulation during the lesson.*
+
+| # | Time | Trigger (what was happening) | Warning Sign | Strategy Used | Re-engaged? | Time to Re-engage |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | _____ | _____ | Head down / Bathroom / Fidgeting / Other: _____ | Breathing / Movement / Fidget / Sensory / Grounding / None | Y / N | _____ min |
+| 2 | _____ | _____ | Head down / Bathroom / Fidgeting / Other: _____ | Breathing / Movement / Fidget / Sensory / Grounding / None | Y / N | _____ min |
+| 3 | _____ | _____ | Head down / Bathroom / Fidgeting / Other: _____ | Breathing / Movement / Fidget / Sensory / Grounding / None | Y / N | _____ min |
+| 4 | _____ | _____ | Head down / Bathroom / Fidgeting / Other: _____ | Breathing / Movement / Fidget / Sensory / Grounding / None | Y / N | _____ min |
+
+### Benchmark Tracking
+
+#### Benchmark 1: Recognize and describe physical cues of frustration
+Did Jasmine identify her own frustration cues (tense body, faster breathing, restlessness, lowered head)?
+
+- [ ] Independently recognized cues
+- [ ] Recognized with adult prompt
+- [ ] Did not recognize / shut down without awareness
+
+**Opportunities observed:** _____ | **Successful:** _____
+**Rate:** _____ / _____ = _____% (target: 80%)
+
+#### Benchmark 2: Independently request or initiate a calming strategy
+
+- [ ] Independently requested a break or strategy
+- [ ] Used a strategy after adult prompt
+- [ ] Did not use a strategy
+
+**Strategy used (circle):** Deep breathing / Movement break / Fidget tool / Sensory tool / Grounding exercise / Other: _____
+
+**Opportunities observed:** _____ | **Successful:** _____
+**Rate:** _____ / _____ = _____% (target: 80%)
+
+#### Benchmark 3: Use strategy, return to classroom, engage in task, reflect
+
+- [ ] Used strategy AND returned to task
+- [ ] Used strategy but did not fully re-engage
+- [ ] Did not use strategy / remained disengaged
+
+**Could Jasmine reflect on whether her strategy worked?** Y / N
+**If yes, what did she say?** "_____"
+
+**Opportunities observed:** _____ | **Successful:** _____
+**Rate:** _____ / _____ = _____% (target: 80%)
+
+---
+
+## Lesson-Level Metrics
+
+| Metric | Value |
+| --- | --- |
+| Total time in classroom | _____ / 45 min |
+| Times left classroom | _____ |
+| Breaks taken (scheduled) | _____ / 2 |
+| Breaks taken (unscheduled) | _____ |
+| Accommodations implemented | _____ / 11 |
+| Small group used? | Y / N (during: _____) |
+| Work completion | MC: ___/4 | SA: started / partial / complete |
+
+## Observer Notes
+
+What worked well today?
+
+_____________________________________________
+
+What should be adjusted for next lesson?
+
+_____________________________________________
+
+Should any accommodations be modified at the next IEP review? Which ones and why?
+
+_____________________________________________

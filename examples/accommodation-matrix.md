@@ -21,7 +21,7 @@ For each accommodation, the following shows exactly when and how to implement it
 > After presenting the Purpose for Reading, restate it simply: 'Today we're reading about what makes a community. Our job is to figure out Lowe's definition.'
 
 **During Reading** (Min 5-20)
-> Before each question type (Think & Share, Write, Turn & Talk), restate what students should do: 'For this one, talk to your partner about...' Confirm Jasmine understands with a quick proximity check (stand near her desk, glance at her paper, or a brief nod exchange).
+> Before each question type (Think & Share, Write, Turn & Talk), restate what students should do: 'For this one, talk to your partner about...' Confirm Jasmine understands the directions before moving on.
 
 **Independent Practice** (Min 20-40)
 > Before releasing students, restate: 'You have 4 multiple choice questions and 1 writing prompt. You CAN look back at the text. Start with the multiple choice.' Walk to Jasmine and repeat these directions 1:1.
@@ -73,8 +73,11 @@ For each accommodation, the following shows exactly when and how to implement it
 
 ### [SETTING] 1:1 check-ins
 
-**Full Lesson** (Min 0-45)
-> Implement "1:1 check-ins" throughout the lesson as appropriate for each activity.
+**During Reading** (Min 5-20)
+> SE teacher checks in after paragraphs 1-2 questions and again during partner reading (paragraphs 3-7). Focus on comprehension: 'What has Lowe said so far about community?' If Jasmine can't summarize, re-read paragraph 3's definition together.
+
+**Independent Practice** (Min 20-40)
+> Check in after Jasmine completes MC questions (before starting short answer). Review her MC answers together -- if she got Q1 or Q2 wrong, guide her back to the relevant paragraph to self-correct before starting the writing prompt.
 
 ### [SETTING] Reminder to remain engaged
 

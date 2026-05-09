@@ -27,7 +27,8 @@ export type MatchAccommodationsInput = z.infer<
   typeof matchAccommodationsSchema
 >;
 
-export function matchAccommodations(input: MatchAccommodationsInput): string {
+export function matchAccommodations(rawInput: MatchAccommodationsInput): string {
+  const input = matchAccommodationsSchema.parse(rawInput);
   const iep = jasmineBaileyIEP;
   const lesson = communityLesson;
 
@@ -203,7 +204,7 @@ function getAccommodationMappings(
         activity: "During Reading",
         timing: "Min 5-20",
         implementation:
-          "Before each question type (Think & Share, Write, Turn & Talk), restate what students should do: 'For this one, talk to your partner about...' Confirm Jasmine understands with a quick proximity check (stand near her desk, glance at her paper, or a brief nod exchange).",
+          "Before each question type (Think & Share, Write, Turn & Talk), restate what students should do: 'For this one, talk to your partner about...' Confirm Jasmine understands the directions before moving on.",
       },
       {
         activity: "Independent Practice",
@@ -282,7 +283,7 @@ function getAccommodationMappings(
           "Schedule a 2-minute break at the transition between MC questions and the short answer prompt (approximately minute 30). This is a natural stopping point and prevents stamina-related shutdown.",
       },
     ],
-    "1:1 check ins": [
+    "1:1 check-ins": [
       {
         activity: "During Reading",
         timing: "Min 5-20",

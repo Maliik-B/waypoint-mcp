@@ -14,6 +14,13 @@
  * The server exposes the IEP and curriculum data in a way that lets Claude
  * reason about the intersection of a specific student's needs and a specific
  * lesson's content, producing concrete, classroom-ready modifications.
+ *
+ * Multi-student design:
+ * The resource URI scheme (iep://{student-slug}/{section}, lesson://{lesson-slug}/{section})
+ * is designed for multiple students and lessons. In production, adding a second
+ * student (e.g., iep://marcus-chen/profile) or lesson (e.g., lesson://photosynthesis/overview)
+ * requires only new data files and resource registrations -- all tools accept the
+ * student/lesson context through the resources, not hardcoded references.
  */
 
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
@@ -41,6 +48,22 @@ import {
   generatePrepSummary,
   prepSummarySchema,
 } from "./tools/prep-summary.js";
+import {
+  exportMaterials,
+  exportMaterialsSchema,
+} from "./tools/export-materials.js";
+import {
+  generateProgressDataSheet,
+  progressCollectorSchema,
+} from "./tools/progress-collector.js";
+import {
+  generateTakeHome,
+  takeHomeSchema,
+} from "./tools/take-home.js";
+import {
+  generateClassroomSummary,
+  classroomSummarySchema,
+} from "./tools/classroom-summary.js";
 import { getPromptMessages } from "./prompts/index.js";
 
 const server = new McpServer({
@@ -112,7 +135,7 @@ server.resource(
   "iep://jasmine-bailey/accommodations",
   {
     description:
-      "11 legally mandated accommodations (presentation, timing, setting) and 3 modifications (content, instruction)",
+      "11 legally mandated accommodations (presentation, timing, setting), 3 modifications (content, instruction), and 4 MCAS testing accommodations (DF1, DF3, DF4, A9)",
     mimeType: "application/json",
   },
   async (uri) => ({
@@ -131,7 +154,7 @@ server.resource(
   "iep://jasmine-bailey/services",
   {
     description:
-      "Service delivery schedule: SE teacher daily 55 min (Math + ELA), Counselor weekly 30 min",
+      "Service delivery schedule: SE teacher daily 55 min (Math + ELA), Counselor weekly 30 min. Includes case manager and placement type (Full Inclusion, 80%)",
     mimeType: "application/json",
   },
   async (uri) => ({
@@ -283,7 +306,7 @@ server.tool(
   generateModificationsSchema.shape,
   async (params) => {
     const result = generateModifications(
-      params as any
+      generateModificationsSchema.parse(params)
     );
     return {
       content: [{ type: "text", text: result }],
@@ -297,7 +320,7 @@ server.tool(
   matchAccommodationsSchema.shape,
   async (params) => {
     const result = matchAccommodations(
-      params as any
+      matchAccommodationsSchema.parse(params)
     );
     return {
       content: [{ type: "text", text: result }],
@@ -310,7 +333,7 @@ server.tool(
   "Generate a scaffolded version of a specific lesson question calibrated to the student's reading level (Grade 3 iReady, Grade 2 informational text). Produces sentence starters, graphic organizers, chunked sub-questions, or fill-in-the-blank alternatives. All scaffolds use the actual lesson content (specific paragraphs, vocabulary, examples). Available levels: light/moderate/intensive. Supports 'teacher' mode (includes expected answer hints for the teacher's reference) and 'student' mode (clean handout without answers, ready to photocopy).",
   scaffoldQuestionSchema.shape,
   async (params) => {
-    const result = scaffoldQuestion(params as any);
+    const result = scaffoldQuestion(scaffoldQuestionSchema.parse(params));
     return {
       content: [{ type: "text", text: result }],
     };
@@ -322,7 +345,7 @@ server.tool(
   "Review the lesson plan against all IEP accommodations and produce a compliance checklist. Flags accommodations as YES/PARTIAL/NEEDS PLAN with risk levels. Includes lesson-specific risk assessment (high-risk moments for the student), IEP goal alignment mapping, and specific recommendations for any gaps. Important because IEP accommodations are legally binding.",
   checkComplianceSchema.shape,
   async (params) => {
-    const result = checkCompliance(params as any);
+    const result = checkCompliance(checkComplianceSchema.parse(params));
     return {
       content: [{ type: "text", text: result }],
     };
@@ -334,7 +357,55 @@ server.tool(
   "Generate a one-page 'before class' summary with everything a teacher needs to prepare: student snapshot (reading level, behavioral pattern, what works), top 3 things to remember, materials checklist, minute-by-minute timeline with risk levels, early warning signs and intervention scripts, and IEP data collection reminders. Designed to be printed and taped to the lesson binder.",
   prepSummarySchema.shape,
   async (params) => {
-    const result = generatePrepSummary(params as any);
+    const result = generatePrepSummary(prepSummarySchema.parse(params));
+    return {
+      content: [{ type: "text", text: result }],
+    };
+  }
+);
+
+server.tool(
+  "export_printable_materials",
+  "Bundle all student materials for a lesson into a single print-ready document. Includes graphic organizers, writing scaffolds, schedule cards, pause-plan-proceed cards, and vocabulary reference sheets. Supports student mode (clean handouts for photocopying) and teacher mode (adds answer keys and implementation notes). Designed to be printed as one packet before class.",
+  exportMaterialsSchema.shape,
+  async (params) => {
+    const result = exportMaterials(exportMaterialsSchema.parse(params));
+    return {
+      content: [{ type: "text", text: result }],
+    };
+  }
+);
+
+server.tool(
+  "generate_progress_data_sheet",
+  "Generate a structured IEP progress data collection form for this lesson. Maps each IEP goal benchmark to specific lesson activities, providing observation checklists, scoring rubrics, and a frustration event log. The SE teacher fills this out during or after the lesson for quarterly progress reporting. Tracks ELA benchmarks (annotation, comprehension, writing) and self-regulation benchmarks (recognition, strategy use, re-engagement).",
+  progressCollectorSchema.shape,
+  async (params) => {
+    const result = generateProgressDataSheet(progressCollectorSchema.parse(params));
+    return {
+      content: [{ type: "text", text: result }],
+    };
+  }
+);
+
+server.tool(
+  "generate_take_home",
+  "Generate a modified take-home version of classwork the student didn't finish. Includes relevant text excerpts (so the student doesn't need the full article at home), reduced-scope questions, sentence starters, word banks, and an optional parent/guardian note explaining the assignment and how to help. Designed for students with low stamina or who shut down during independent practice.",
+  takeHomeSchema.shape,
+  async (params) => {
+    const result = generateTakeHome(takeHomeSchema.parse(params));
+    return {
+      content: [{ type: "text", text: result }],
+    };
+  }
+);
+
+server.tool(
+  "generate_classroom_summary",
+  "Generate a classroom-at-a-glance summary for a teacher managing IEP students in one lesson. Shows accommodation overlap matrix (which accommodations are shared), materials preparation list (shared vs. individualized), minute-by-minute priority timeline (who needs support when), teacher coordination notes (SE teacher vs. gen ed teacher roles), and an end-of-lesson decision tree. Designed for classes with multiple IEP students.",
+  classroomSummarySchema.shape,
+  async (params) => {
+    const result = generateClassroomSummary(classroomSummarySchema.parse(params));
     return {
       content: [{ type: "text", text: result }],
     };
