@@ -56,6 +56,14 @@ export const jasmineBaileyIEP: IEPData = {
       overall:
         "I want to get 3's in all my classes. I want to ask for help when I'm stuck instead of giving up.",
     },
+    parentConcerns:
+      "Jasmine's mom is concerned about her grades and her ability to keep up with grade-level work.",
+    teamVision: {
+      thisYear:
+        "The team will support Jasmine in improving her grades in all subject areas. The team will continue to encourage her to attend small groups for Math and ELA.",
+      fiveYear:
+        "The team would like to see Jasmine graduate from Riverstone Prep Middle School and attend Riverstone Prep High School.",
+    },
   },
 
   presentLevels: [
@@ -108,7 +116,7 @@ export const jasmineBaileyIEP: IEPData = {
     {
       area: "Counseling / Self-Regulation",
       baseline:
-        "Jasmine can identify emotions and coping strategies in counseling sessions. She sometimes does not apply these strategies in the classroom, leading to withdrawal and shutdown. She has shown the ability to walk away from difficult situations but sometimes shuts down rather than using strategies that work for her.",
+        "Jasmine can identify emotions and coping strategies in counseling sessions. She does well with listening to instructions; however, she struggles at times to use interventions when prompted. She sometimes does not apply these strategies in the classroom, leading to withdrawal and shutdown. She has shown the ability to walk away from difficult situations but sometimes shuts down rather than using strategies that work for her.",
       annualTarget:
         "Jasmine will improve her self-regulation skills by using a taught calming strategy (deep breathing, movement break, fidget tool, sensory tool, or grounding exercise) to calm her body and re-engage back to tasks in 4 out of 5 opportunities (80%).",
       criteria: "80% of opportunities",
@@ -292,6 +300,40 @@ export const jasmineBaileyIEP: IEPData = {
       location: "Counselor's Office",
       frequency: "Weekly",
       duration: "30 minutes",
+    },
+  ],
+
+  caseManager: "Marisol Gutierrez-Stone",
+
+  placementType: "Full Inclusion Program (IEP services provided outside the general education classroom less than 21% of the time; 80% inclusion)",
+
+  bullyingVulnerability: {
+    isVulnerable: true,
+    response:
+      "The team found that Jasmine is more vulnerable to bullying due to her disability. Emotional regulation goals have been created to address these concerns. The team developed goals and accommodations to support Jasmine with her social interactions and self-advocacy skills.",
+  },
+
+  testingAccommodations: [
+    {
+      code: "DF1",
+      category: "designated-feature",
+      description: "Small Group test administration",
+    },
+    {
+      code: "DF3",
+      category: "designated-feature",
+      description: "Frequent brief supervised breaks",
+    },
+    {
+      code: "DF4",
+      category: "designated-feature",
+      description: "Separate or alternate test location",
+    },
+    {
+      code: "A9",
+      category: "presentation",
+      description:
+        "Use a Department approved graphic organizer, checklist, or supplemental reference sheet",
     },
   ],
 };

@@ -23,6 +23,10 @@ export interface StudentProfile {
   motivators: string[];
   /** Student's own words about what they want to achieve */
   studentVision: Record<string, string>;
+  /** Parent/guardian concerns stated at the IEP meeting */
+  parentConcerns?: string;
+  /** Team's plan in response to student vision */
+  teamVision?: Record<string, string>;
 }
 
 export interface PresentLevel {
@@ -69,6 +73,12 @@ export interface ServiceDelivery {
   duration: string;
 }
 
+export interface TestingAccommodation {
+  code: string;
+  category: "designated-feature" | "presentation" | "response" | "timing" | "setting";
+  description: string;
+}
+
 export interface IEPData {
   profile: StudentProfile;
   presentLevels: PresentLevel[];
@@ -76,6 +86,17 @@ export interface IEPData {
   accommodations: Accommodation[];
   modifications: Modification[];
   services: ServiceDelivery[];
+  /** Case manager / SE teacher name */
+  caseManager?: string;
+  /** Placement type (e.g., Full Inclusion) */
+  placementType?: string;
+  /** Whether the team determined the student is more vulnerable to bullying */
+  bullyingVulnerability?: {
+    isVulnerable: boolean;
+    response: string;
+  };
+  /** State/district-wide testing accommodations (e.g., MCAS) */
+  testingAccommodations?: TestingAccommodation[];
 }
 
 // ── Lesson Types ───────────────────────────────────────────────────────
@@ -84,6 +105,9 @@ export interface LessonMetadata {
   title: string;
   author: string;
   unit: string;
+  /** Position in the unit sequence (e.g., 1 of 8) */
+  lessonNumber?: number;
+  totalLessonsInUnit?: number;
   gradeLevel: string;
   subject: string;
   /** Curriculum standards addressed (e.g., RI.7.2) */

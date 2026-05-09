@@ -37,14 +37,14 @@ export function getIEPResourceList() {
       uri: "iep://jasmine-bailey/accommodations",
       name: "Accommodations and Modifications",
       description:
-        "Legally mandated accommodations (presentation, response, timing, setting) and modifications (content, instruction, output) that MUST be implemented in every lesson. Use this to verify compliance.",
+        "Legally mandated accommodations (presentation, response, timing, setting), modifications (content, instruction, output), and MCAS testing accommodations (DF1, DF3, DF4, A9). Use this to verify compliance.",
       mimeType: "application/json",
     },
     {
       uri: "iep://jasmine-bailey/services",
       name: "Service Delivery Schedule",
       description:
-        "Special education and related services schedule (Math SE teacher daily 55 min, ELA SE teacher daily 55 min, Counseling weekly 30 min). Helps coordinate when support staff are available.",
+        "Service delivery schedule (Math SE teacher daily 55 min, ELA SE teacher daily 55 min, Counseling weekly 30 min), case manager, and placement type (Full Inclusion, 80%).",
       mimeType: "application/json",
     },
     {
@@ -65,7 +65,14 @@ export function readIEPResource(uri: string): string {
       return JSON.stringify(iep.profile, null, 2);
 
     case "iep://jasmine-bailey/present-levels":
-      return JSON.stringify(iep.presentLevels, null, 2);
+      return JSON.stringify(
+        {
+          presentLevels: iep.presentLevels,
+          bullyingVulnerability: iep.bullyingVulnerability,
+        },
+        null,
+        2
+      );
 
     case "iep://jasmine-bailey/goals":
       return JSON.stringify(iep.goals, null, 2);
@@ -75,13 +82,22 @@ export function readIEPResource(uri: string): string {
         {
           accommodations: iep.accommodations,
           modifications: iep.modifications,
+          testingAccommodations: iep.testingAccommodations,
         },
         null,
         2
       );
 
     case "iep://jasmine-bailey/services":
-      return JSON.stringify(iep.services, null, 2);
+      return JSON.stringify(
+        {
+          caseManager: iep.caseManager,
+          placementType: iep.placementType,
+          services: iep.services,
+        },
+        null,
+        2
+      );
 
     case "iep://jasmine-bailey/full":
       return JSON.stringify(iep, null, 2);

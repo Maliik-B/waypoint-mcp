@@ -20,6 +20,8 @@ export const communityLesson: LessonData = {
     title: "What is 'Community' and why is it important?",
     author: "Toby Lowe",
     unit: "Unit 1: Community and Belonging",
+    lessonNumber: 1,
+    totalLessonsInUnit: 8,
     gradeLevel: "7th grade",
     subject: "ELA",
     standards: ["RI.7.2"],
