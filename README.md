@@ -17,6 +17,14 @@ npm run build
 npm start
 ```
 
+### See It In Action
+
+```bash
+npm run demo
+```
+
+This prints output from 6 of the 10 tools so you can see the quality without configuring Claude Desktop.
+
 ### Claude Desktop Configuration
 
 Add to your Claude Desktop config (`claude_desktop_config.json`):
@@ -32,7 +40,7 @@ Add to your Claude Desktop config (`claude_desktop_config.json`):
 }
 ```
 
-Then restart Claude Desktop. The server exposes 12 resources, 9 tools, and 6 prompts.
+Then restart Claude Desktop. The server exposes 12 resources, 10 tools, and 6 prompts.
 
 ### Try It
 
@@ -199,6 +207,18 @@ Generates a classroom-at-a-glance view for teachers managing multiple IEP studen
 - **End-of-lesson decision tree**: What to do based on work completion status (collect, take-home, or no take-home if student is in distress)
 
 Currently demonstrates with one student; the schema and output structure are designed for multiple students when additional IEP data is loaded.
+
+#### `generate_sub_card`
+
+Generates a substitute teacher emergency card. When a sub covers a class, they typically receive no IEP information. But IEP accommodations are legally mandated regardless of who is teaching. A sub who doesn't know Jasmine's pattern will misread her shutdown as defiance.
+
+The card is designed to be:
+- Left in the substitute folder (every classroom has one)
+- Read in under 2 minutes by someone with no IEP training
+- Actionable without any prior knowledge of the student
+- Legally sufficient (covers all mandated accommodations in plain language)
+
+Includes: "The One Thing to Know" (behavioral pattern), required accommodations simplified for a non-specialist, a step-by-step "If She Shuts Down" protocol, what strategies work, and optionally lesson-specific timing notes. Deliberately written in direct, non-jargon language.
 
 ### Multi-Student Design
 
@@ -439,6 +459,7 @@ Every output is designed for a teacher's real workflow:
 ## Project Structure
 
 ```
+demo.ts                 # CLI demo: run `npm run demo` to see tool output
 src/
   index.ts              # MCP server entry point (resources, tools, prompts)
   types.ts              # Domain types (IEP, lesson data models)
@@ -458,7 +479,8 @@ src/
     progress-collector.ts      # IEP progress data collection forms
     take-home.ts               # Modified take-home for unfinished classwork
     classroom-summary.ts       # Multi-student classroom-at-a-glance
-    __tests__/tools.test.ts    # 37 smoke tests across all 9 tools
+    sub-card.ts                # Substitute teacher emergency card
+    __tests__/tools.test.ts    # 41 smoke tests across all 10 tools
   prompts/
     index.ts            # 6 prompt templates for teacher workflows
 data/
@@ -474,6 +496,7 @@ examples/
   full-lesson-modifications.md  # Complete modification context for full lesson
   progress-data-sheet.md        # IEP progress data collection form
   scaffolded-short-answer.md    # Short answer scaffolded at moderate level
+  sub-card.md                   # Substitute teacher emergency card
   take-home-sa1-mc4.md          # Take-home form with parent note
   teacher-prep-summary.md       # One-page printable teacher prep summary
 ```
