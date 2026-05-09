@@ -31,6 +31,13 @@ export const scaffoldQuestionSchema = z.object({
     .describe(
       "How much scaffolding to provide. Light = paragraph hints. Moderate = sentence starters + chunked questions. Intensive = fill-in-the-blank with word banks."
     ),
+  mode: z
+    .enum(["teacher", "student"])
+    .optional()
+    .default("teacher")
+    .describe(
+      "Output mode. 'teacher' includes expected answer hints for the teacher's reference copy. 'student' produces a clean handout without answer hints, ready to photocopy and hand to the student."
+    ),
 });
 
 export type ScaffoldQuestionInput = z.infer<typeof scaffoldQuestionSchema>;
@@ -38,39 +45,43 @@ export type ScaffoldQuestionInput = z.infer<typeof scaffoldQuestionSchema>;
 export function scaffoldQuestion(input: ScaffoldQuestionInput): string {
   const iep = jasmineBaileyIEP;
   const lesson = communityLesson;
+  const isTeacherMode = (input.mode ?? "teacher") === "teacher";
 
   const sections: string[] = [];
 
+  const modeLabel = isTeacherMode ? "Teacher Edition (includes answer hints)" : "Student Handout";
   sections.push("# Scaffolded Question(s) for Jasmine Bailey");
   sections.push(
-    `**Scaffolding Level:** ${input.scaffolding_level} | **Reading Level:** Grade 3 (iReady) | **Informational Text:** Grade 2`
+    `**Scaffolding Level:** ${input.scaffolding_level} | **Mode:** ${modeLabel} | **Reading Level:** Grade 3 (iReady)`
   );
   sections.push("");
 
-  // Relevant IEP context for scaffolding decisions
-  sections.push("## Scaffolding Rationale");
-  sections.push(
-    "Jasmine's IEP benchmarks include: accurately annotating text, answering literal comprehension questions, writing claims with evidence, and finding textual evidence. Scaffolds should BUILD these skills, not bypass them."
-  );
-  sections.push("");
-  sections.push("Key considerations:");
-  sections.push(
-    "- She can decode grade-level words but struggles with literal and inferential comprehension"
-  );
-  sections.push(
-    "- She benefits from graphic organizers and checklists (starting to find value in them)"
-  );
-  sections.push(
-    "- Writing is stronger with 1:1 support; independent writing is ~50% accuracy"
-  );
-  sections.push(
-    "- She needs to use reference sheets and class notes more effectively (Math benchmark 3, applicable to ELA too)"
-  );
-  sections.push("");
+  // IEP rationale context (teacher edition only)
+  if (isTeacherMode) {
+    sections.push("## Scaffolding Rationale");
+    sections.push(
+      "Jasmine's IEP benchmarks include: accurately annotating text, answering literal comprehension questions, writing claims with evidence, and finding textual evidence. Scaffolds should BUILD these skills, not bypass them."
+    );
+    sections.push("");
+    sections.push("Key considerations:");
+    sections.push(
+      "- She can decode grade-level words but struggles with literal and inferential comprehension"
+    );
+    sections.push(
+      "- She benefits from graphic organizers and checklists (starting to find value in them)"
+    );
+    sections.push(
+      "- Writing is stronger with 1:1 support; independent writing is ~50% accuracy"
+    );
+    sections.push(
+      "- She needs to use reference sheets and class notes more effectively (Math benchmark 3, applicable to ELA too)"
+    );
+    sections.push("");
+  }
 
   if (input.question_id === "all") {
     for (const q of lesson.questions) {
-      sections.push(scaffoldSingleQuestion(q, input.scaffolding_level));
+      sections.push(scaffoldSingleQuestion(q, input.scaffolding_level, isTeacherMode));
       sections.push("---");
       sections.push("");
     }
@@ -79,7 +90,7 @@ export function scaffoldQuestion(input: ScaffoldQuestionInput): string {
     if (!question) {
       return `Question ID "${input.question_id}" not found. Available IDs: ${lesson.questions.map((q) => q.id).join(", ")}`;
     }
-    sections.push(scaffoldSingleQuestion(question, input.scaffolding_level));
+    sections.push(scaffoldSingleQuestion(question, input.scaffolding_level, isTeacherMode));
   }
 
   return sections.join("\n");
@@ -87,7 +98,8 @@ export function scaffoldQuestion(input: ScaffoldQuestionInput): string {
 
 function scaffoldSingleQuestion(
   question: (typeof communityLesson.questions)[number],
-  level: "light" | "moderate" | "intensive"
+  level: "light" | "moderate" | "intensive",
+  isTeacherMode: boolean
 ): string {
   const lines: string[] = [];
 
@@ -101,25 +113,48 @@ function scaffoldSingleQuestion(
   // Generate scaffolding based on question type and level
   switch (question.type) {
     case "during-reading":
-      lines.push(scaffoldDuringReading(question, level));
+      lines.push(scaffoldDuringReading(question, level, isTeacherMode));
       break;
     case "multiple-choice":
-      lines.push(scaffoldMultipleChoice(question, level));
+      lines.push(scaffoldMultipleChoice(question, level, isTeacherMode));
       break;
     case "short-answer":
-      lines.push(scaffoldShortAnswer(question, level));
+      lines.push(scaffoldShortAnswer(question, level, isTeacherMode));
       break;
     case "discussion":
-      lines.push(scaffoldDiscussion(question, level));
+      lines.push(scaffoldDiscussion(question, level, isTeacherMode));
       break;
   }
 
-  return lines.join("\n");
+  let result = lines.join("\n");
+
+  // In student mode, strip teacher-only content:
+  // - Lines starting with *Expected (answer hints)
+  // - Lines starting with *The teacher/SE teacher should (teacher directives)
+  if (!isTeacherMode) {
+    result = result
+      .split("\n")
+      .filter((line) => {
+        const trimmed = line.trim();
+        return (
+          !trimmed.startsWith("*Expected") &&
+          !trimmed.startsWith("*The teacher") &&
+          !trimmed.startsWith("*The SE teacher") &&
+          !trimmed.startsWith("*Hint for Jasmine:")
+        );
+      })
+      .join("\n")
+      // Clean up double blank lines left by removal
+      .replace(/\n{3,}/g, "\n\n");
+  }
+
+  return result;
 }
 
 function scaffoldDuringReading(
   q: (typeof communityLesson.questions)[number],
-  level: "light" | "moderate" | "intensive"
+  level: "light" | "moderate" | "intensive",
+  isTeacherMode: boolean
 ): string {
   const lines: string[] = [];
 
@@ -282,7 +317,8 @@ function scaffoldDuringReading(
 
 function scaffoldMultipleChoice(
   q: (typeof communityLesson.questions)[number],
-  level: "light" | "moderate" | "intensive"
+  level: "light" | "moderate" | "intensive",
+  _isTeacherMode: boolean
 ): string {
   const lines: string[] = [];
 
@@ -385,7 +421,8 @@ function scaffoldMultipleChoice(
 
 function scaffoldShortAnswer(
   q: (typeof communityLesson.questions)[number],
-  level: "light" | "moderate" | "intensive"
+  level: "light" | "moderate" | "intensive",
+  _isTeacherMode: boolean
 ): string {
   const lines: string[] = [];
 
@@ -476,7 +513,8 @@ function scaffoldShortAnswer(
 
 function scaffoldDiscussion(
   q: (typeof communityLesson.questions)[number],
-  level: "light" | "moderate" | "intensive"
+  level: "light" | "moderate" | "intensive",
+  _isTeacherMode: boolean
 ): string {
   const lines: string[] = [];
 

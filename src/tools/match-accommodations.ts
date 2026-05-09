@@ -203,7 +203,7 @@ function getAccommodationMappings(
         activity: "During Reading",
         timing: "Min 5-20",
         implementation:
-          "Before each question type (Think & Share, Write, Turn & Talk), restate what students should do: 'For this one, talk to your partner about...' Confirm Jasmine is following by using a discreet proximity check (stand near her desk, glance at her paper) rather than asking her to repeat back publicly, which can single her out.",
+          "Before each question type (Think & Share, Write, Turn & Talk), restate what students should do: 'For this one, talk to your partner about...' Confirm Jasmine understands with a quick proximity check (stand near her desk, glance at her paper, or a brief nod exchange).",
       },
       {
         activity: "Independent Practice",

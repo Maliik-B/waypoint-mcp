@@ -1,5 +1,5 @@
 # Scaffolded Question(s) for Jasmine Bailey
-**Scaffolding Level:** moderate | **Reading Level:** Grade 3 (iReady) | **Informational Text:** Grade 2
+**Scaffolding Level:** moderate | **Mode:** Teacher Edition (includes answer hints) | **Reading Level:** Grade 3 (iReady)
 
 ## Scaffolding Rationale
 Jasmine's IEP benchmarks include: accurately annotating text, answering literal comprehension questions, writing claims with evidence, and finding textual evidence. Scaffolds should BUILD these skills, not bypass them.

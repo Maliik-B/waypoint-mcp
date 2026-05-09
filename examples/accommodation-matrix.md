@@ -21,7 +21,7 @@ For each accommodation, the following shows exactly when and how to implement it
 > After presenting the Purpose for Reading, restate it simply: 'Today we're reading about what makes a community. Our job is to figure out Lowe's definition.'
 
 **During Reading** (Min 5-20)
-> Before each question type (Think & Share, Write, Turn & Talk), restate what students should do: 'For this one, talk to your partner about...' Confirm Jasmine is following by using a discreet proximity check (stand near her desk, glance at her paper) rather than asking her to repeat back publicly, which can single her out.
+> Before each question type (Think & Share, Write, Turn & Talk), restate what students should do: 'For this one, talk to your partner about...' Confirm Jasmine understands with a quick proximity check (stand near her desk, glance at her paper, or a brief nod exchange).
 
 **Independent Practice** (Min 20-40)
 > Before releasing students, restate: 'You have 4 multiple choice questions and 1 writing prompt. You CAN look back at the text. Start with the multiple choice.' Walk to Jasmine and repeat these directions 1:1.

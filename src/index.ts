@@ -307,7 +307,7 @@ server.tool(
 
 server.tool(
   "scaffold_question",
-  "Generate a scaffolded version of a specific lesson question calibrated to the student's reading level (Grade 3 iReady, Grade 2 informational text). Produces sentence starters, graphic organizers, chunked sub-questions, or fill-in-the-blank alternatives. All scaffolds use the actual lesson content (specific paragraphs, vocabulary, examples). Available levels: light (hints), moderate (starters + organizers), intensive (fill-in-the-blank).",
+  "Generate a scaffolded version of a specific lesson question calibrated to the student's reading level (Grade 3 iReady, Grade 2 informational text). Produces sentence starters, graphic organizers, chunked sub-questions, or fill-in-the-blank alternatives. All scaffolds use the actual lesson content (specific paragraphs, vocabulary, examples). Available levels: light/moderate/intensive. Supports 'teacher' mode (includes expected answer hints for the teacher's reference) and 'student' mode (clean handout without answers, ready to photocopy).",
   scaffoldQuestionSchema.shape,
   async (params) => {
     const result = scaffoldQuestion(params as any);

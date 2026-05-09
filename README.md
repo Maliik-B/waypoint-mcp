@@ -137,6 +137,8 @@ Takes a specific question ID and scaffolding level (light/moderate/intensive) an
 - **Moderate**: Sentence starters, graphic organizers, chunked sub-questions
 - **Intensive**: Fill-in-the-blank with word banks drawn from the text
 
+Supports a **`mode` parameter** (`teacher` or `student`). Teacher mode includes expected answer hints so the SE teacher can reference them mid-lesson without having memorized the Toby Lowe article. Student mode produces a clean handout without answers, ready to photocopy. This mirrors how real curriculum materials always separate teacher and student editions.
+
 #### `check_accommodation_compliance`
 
 Reviews the lesson against all IEP accommodations and produces a compliance matrix with YES/PARTIAL/NEEDS PLAN ratings and risk levels. Includes lesson-specific risk assessment and IEP goal alignment mapping.
