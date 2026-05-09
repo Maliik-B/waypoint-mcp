@@ -26,7 +26,8 @@ export const prepSummarySchema = z.object({
 
 export type PrepSummaryInput = z.infer<typeof prepSummarySchema>;
 
-export function generatePrepSummary(input: PrepSummaryInput): string {
+export function generatePrepSummary(rawInput: PrepSummaryInput): string {
+  const input = prepSummarySchema.parse(rawInput);
   const iep = jasmineBaileyIEP;
   const lesson = communityLesson;
 

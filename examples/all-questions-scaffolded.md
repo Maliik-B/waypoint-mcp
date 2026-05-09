@@ -24,6 +24,7 @@ What does he mean? Choose one:
 - [ ] Community is a dangerous word
 - [ ] Nobody talks about community
 Now tell your partner: Why do you think people don't say what they mean by 'community'?
+
 ---
 
 ## DR-1B: Write (Optional)
@@ -40,6 +41,7 @@ Count the bullet points. Lowe lists things that a good definition of community s
 **Sentence starter:** "In paragraph 2, Lowe lists six things that a definition of community needs to explain. This connects to paragraph 1 because _____."
 
 *Expected direction: The list supports Lowe's claim that people don't define 'community' clearly, by showing what a good definition must cover.*
+
 ---
 
 ## DR-1C: Turn & Talk
@@ -57,6 +59,7 @@ Fill in:
 3. Communities shape what people think is __________ and __________.
 
 *Expected answers: (1) interests/shared practices, (2) togetherness/positive, (3) good, bad*
+
 ---
 
 ## DR-2A: Write
@@ -75,6 +78,7 @@ He uses Newcastle as an example. In paragraphs 5-6, find:
 **Sentence starter:** "Lowe's example supports his definition because Newcastle's shared story is part of who he is. For example, he _____ and _____."
 
 *Expected direction: He shows people around the city, feels pride/at home when hearing the accent, attends football matches, adopted Newcastle character traits. These show the community's story is part of his identity.*
+
 ---
 
 ## DR-2B: Turn & Talk
@@ -91,6 +95,7 @@ Fill in before talking:
 - My community: __________
 - Our shared story: __________
 - Something I do that shows I'm part of this community: __________
+
 ---
 
 ## DR-3A: Turn & Talk
@@ -111,6 +116,7 @@ Both lists have 6 bullet points.
 In your own words: Why does Lowe go through each trait a second time?
 
 *Expected answer: Lowe tests his definition against the 6 criteria from paragraph 2 to prove it works.*
+
 ---
 
 ## DR-3B: Write
@@ -131,6 +137,7 @@ Choose 3 of these traits and explain in your own words:
 | Part of many communities | People can have more than one __________ |
 
 *Expected answers: (1) any other social practice/interest, (2) like they belong / part of something larger / togetherness, (3) identity-forming story / shared story*
+
 ---
 
 ## DR-4: Find Evidence
@@ -148,6 +155,7 @@ The title asks TWO questions:
 Find one quote that answers each:
 - WHAT is community? Look in paragraphs 9-10 for Lowe's definition. Start with "Community is..."
 - WHY is it important? Look in paragraph 11 for why Lowe thinks community matters for "social change."
+
 ---
 
 ## MC-1: Multiple Choice
@@ -165,6 +173,7 @@ D. to give a clear and useful definition of community
 - Talks about being part of multiple communities (A), OR
 - Shows how community shaped the author's life (B), OR
 - Gives a clear definition of community (D)?
+
 ---
 
 ## MC-2: Multiple Choice
@@ -179,6 +188,7 @@ D. "Social change requires that we rewrite our communal narratives." (Paragraph 
 **Step 1:** Read each quote. Ask: Does this quote capture the MAIN IDEA?
 **Step 2:** The main idea is Lowe's DEFINITION of community.
 Which quote IS the definition? Look for the word 'community is...'
+
 ---
 
 ## MC-3: Multiple Choice
@@ -194,6 +204,7 @@ D. recognized
 **Step 2:** People are saying HORRIBLE things about Newcastle. How would that make Lowe feel?
 - Bored? Insulted? Motivated? Recognized?
 Which feeling makes sense when someone says something mean about a place you love?
+
 ---
 
 ## MC-4: Multiple Choice
@@ -212,6 +223,7 @@ D. by illustrating how the Newcastle community has many different members
 - Give a PERSONAL EXAMPLE of his definition (C)?
 - Show Newcastle has many members (D)?
 Think: Does this example help you understand what 'identity-forming narrative' means?
+
 ---
 
 ## SA-1: Short Answer
@@ -245,6 +257,7 @@ Self-Checklist: Did I fully answer the prompt? Did I include at least two detail
 *- Evidence #1: "Those people build the shared story archetypes of that community into their sense of themselves" (para 4).*
 *- Evidence #2: Lowe shows people around Newcastle, feels pride and at home hearing the accent (paras 5-6).*
 *- Analysis: An identity-forming narrative is a story that shapes a person's identity and worldview.*
+
 ---
 
 ## DISC-1: Student-Led Discussion
@@ -259,6 +272,7 @@ Self-Checklist: Did I fully answer the prompt? Did I include at least two detail
 **Sentence starter:** "In my __________ community, it is courteous to _________. For example, _________."
 
 *Hint for Jasmine: Think about Riverstone Prep. What's something people do here to be kind or respectful?*
+
 ---
 
 ## DISC-2: Student-Led Discussion
@@ -273,6 +287,7 @@ Self-Checklist: Did I fully answer the prompt? Did I include at least two detail
 **Choose your position:**
 - "Yes, I think you can be part of a community without agreeing with everything because _____."
 - "No, I think you have to agree because _____."
+
 ---
 
 ## DISC-3: Student-Led Discussion
@@ -286,5 +301,3 @@ Self-Checklist: Did I fully answer the prompt? Did I include at least two detail
 
 **Now think:** What's one good thing about being part of BOTH?
 **Sentence starter:** "One benefit of belonging to more than one community is _________ because _________."
----
-

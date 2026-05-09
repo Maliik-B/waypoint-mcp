@@ -32,7 +32,7 @@ Add to your Claude Desktop config (`claude_desktop_config.json`):
 }
 ```
 
-Then restart Claude Desktop. The server exposes 12 resources, 4 tools, and 5 prompts.
+Then restart Claude Desktop. The server exposes 12 resources, 9 tools, and 6 prompts.
 
 ### Try It
 
@@ -70,8 +70,8 @@ The IEP is parsed into 5 resources, each serving a distinct reasoning purpose:
 | `profile` | Strengths, challenges, motivators, student vision | Understanding WHO the student is |
 | `present-levels` | Assessment data (iReady scores, grades), performance descriptions | Calibrating modification difficulty |
 | `goals` | Annual targets with baselines, criteria, benchmarks | Aligning modifications to measurable outcomes |
-| `accommodations` | 11 accommodations + 3 modifications, categorized | Checking legal compliance |
-| `services` | Service schedule (SE teacher daily, counselor weekly) | Coordinating support staff |
+| `accommodations` | 11 accommodations + 3 modifications + 4 MCAS testing accommodations | Checking legal compliance |
+| `services` | Service schedule, case manager, placement type (Full Inclusion) | Coordinating support staff |
 
 This means when Claude needs to scaffold a question, it pulls `present-levels` (to know Jasmine reads at Grade 3) and `accommodations` (to know she gets graphic organizers), without loading 30 pages of unrelated content.
 
@@ -141,7 +141,7 @@ Supports a **`mode` parameter** (`teacher` or `student`). Teacher mode includes 
 
 #### `check_accommodation_compliance`
 
-Reviews the lesson against all IEP accommodations and produces a compliance matrix with YES/PARTIAL/NEEDS PLAN ratings and risk levels. Includes lesson-specific risk assessment and IEP goal alignment mapping.
+Reviews the lesson against all IEP accommodations and produces a compliance matrix with YES/PARTIAL/NEEDS PLAN ratings and risk levels. Includes lesson-specific risk assessment, IEP goal alignment mapping, and a **MCAS testing accommodation cross-reference** that shows how classroom accommodations align with state testing accommodations (ensuring consistent support between instruction and assessment).
 
 This matters because IEP accommodations are **legally mandated**. Missing one isn't just bad pedagogy; it's a compliance violation.
 
@@ -157,9 +157,56 @@ Generates a one-page "before class" summary designed to be printed and taped to 
 
 This tool addresses a real workflow gap: SE teachers co-teach in general ed classrooms and need a quick reference for each student's needs during each lesson.
 
+#### `export_printable_materials`
+
+Bundles all student materials for a lesson into a single print-ready Markdown document. A teacher prints one packet before class instead of generating each tool's output separately. Includes:
+- Graphic organizer (paragraph 2/8 community traits table)
+- Writing scaffold (SA-1 step-by-step guide with sentence starters and self-checklist)
+- Schedule card (student-facing lesson timeline with checkboxes)
+- Pause-Plan-Proceed card (reusable metacognitive prompt)
+- Vocabulary reference sheet
+
+Supports **student mode** (clean handouts, no answers) and **teacher mode** (adds answer keys, MC answer key, quick-reference answer guide, and implementation notes).
+
+#### `generate_progress_data_sheet`
+
+Generates a structured IEP progress data collection form mapping this lesson's activities to specific IEP benchmarks. The SE teacher fills it out during or after the lesson for quarterly progress reporting. Includes:
+- Per-benchmark observation checklists with scoring rubrics (ELA: annotation, MC accuracy, claim writing, evidence, analysis)
+- Self-regulation event log (time, trigger, warning sign, strategy used, re-engagement)
+- Benchmark rate calculations with targets (e.g., "___/5 = ___% (target: 80%)")
+- Lesson-level metrics (time in classroom, breaks taken, work completion)
+- Observer notes for IEP review recommendations
+
+This addresses a real compliance need: SE teachers must collect measurable data every lesson to support quarterly IEP progress reports.
+
+#### `generate_take_home`
+
+Generates a modified take-home version of classwork the student didn't finish. Given that Jasmine has low reading/writing stamina and is likely to not complete SA-1 in class, the take-home form:
+- Includes relevant text excerpts (she doesn't need the full article at home)
+- Reduces scope (claim + 1 example instead of full claim/evidence/analysis)
+- Provides sentence starters and a word bank for independent use
+- Includes a parent/guardian note with context and "how you can help" guidance
+- Removes time pressure framing and ends with encouragement
+
+This is NOT additional homework -- it's completion of classwork with modified expectations for the unsupported home setting.
+
+#### `generate_classroom_summary`
+
+Generates a classroom-at-a-glance view for teachers managing multiple IEP students in one lesson. Produces:
+- **Accommodation overlap matrix**: Shows which accommodations are shared across students (one prep step covers multiple students) and where needs conflict
+- **Materials preparation**: Shared materials (photocopy once) vs. individualized materials per student, with prep time estimates
+- **Priority timeline**: Minute-by-minute guide showing which student needs attention when, and whether the SE teacher or gen ed teacher handles it
+- **End-of-lesson decision tree**: What to do based on work completion status (collect, take-home, or no take-home if student is in distress)
+
+Currently demonstrates with one student; the schema and output structure are designed for multiple students when additional IEP data is loaded.
+
+### Multi-Student Design
+
+The resource URI scheme (`iep://{student-slug}/{section}`, `lesson://{lesson-slug}/{section}`) is designed for multiple students and lessons. Adding a second student (e.g., `iep://marcus-chen/profile`) or lesson (e.g., `lesson://photosynthesis/overview`) requires only new data files and resource registrations. All tools receive student/lesson context through the resources rather than hardcoded references, so the same `scaffold_question` tool works for any student-lesson combination.
+
 ### Prompts: Pre-Built Workflows
 
-Six prompts for common teacher tasks:
+6 prompts for common teacher tasks:
 
 | Prompt | Use Case |
 |--------|----------|
@@ -214,8 +261,8 @@ with grade-level text (she reads at Grade 3; this is a 7th-grade text).
 **During Reading** (Min 5-20)
 > Before each question type (Think & Share, Write, Turn & Talk),
 > restate what students should do: 'For this one, talk to your
-> partner about...' Check that Jasmine heard by asking her to
-> repeat back.
+> partner about...' Confirm Jasmine understands the directions
+> before moving on.
 
 **Independent Practice** (Min 20-40)
 > Before releasing students, restate: 'You have 4 multiple choice
@@ -405,19 +452,30 @@ src/
     generate-modifications.ts  # UDL-organized lesson modifications
     match-accommodations.ts    # Accommodation-activity matrix + self-reg checkpoints
     scaffold-questions.ts      # Question scaffolding at 3 levels (light/moderate/intensive)
-    check-compliance.ts        # IEP compliance verification
+    check-compliance.ts        # IEP compliance verification + MCAS cross-reference
     prep-summary.ts            # One-page teacher prep summary
+    export-materials.ts        # Print-ready materials bundle (student/teacher mode)
+    progress-collector.ts      # IEP progress data collection forms
+    take-home.ts               # Modified take-home for unfinished classwork
+    classroom-summary.ts       # Multi-student classroom-at-a-glance
+    __tests__/tools.test.ts    # 37 smoke tests across all 9 tools
   prompts/
-    index.ts            # 5 prompt templates for teacher workflows
+    index.ts            # 6 prompt templates for teacher workflows
 data/
   iep.pdf               # Original IEP document
   lesson.pdf             # Original lesson plan
 examples/
-  accommodation-matrix.md     # Full accommodation-activity matrix with self-reg checkpoints
-  all-questions-scaffolded.md # All 16 questions scaffolded at moderate level
-  full-lesson-modifications.md # Complete modification context for full lesson
-  scaffolded-short-answer.md  # Short answer scaffolded at moderate level
-  teacher-prep-summary.md     # One-page printable teacher prep summary
+  accommodation-matrix.md       # Full accommodation-activity matrix with self-reg checkpoints
+  all-questions-scaffolded.md   # All 16 questions scaffolded at moderate level
+  classroom-summary.md          # Classroom-at-a-glance with multi-student design
+  compliance-check.md           # IEP compliance matrix with MCAS cross-reference
+  export-materials-student.md   # Print-ready student handout packet
+  export-materials-teacher.md   # Print-ready teacher edition with answer keys
+  full-lesson-modifications.md  # Complete modification context for full lesson
+  progress-data-sheet.md        # IEP progress data collection form
+  scaffolded-short-answer.md    # Short answer scaffolded at moderate level
+  take-home-sa1-mc4.md          # Take-home form with parent note
+  teacher-prep-summary.md       # One-page printable teacher prep summary
 ```
 
 ## Author
