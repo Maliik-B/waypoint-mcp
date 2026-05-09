@@ -35,9 +35,11 @@ Now tell your partner: Why do you think people don't say what they mean by 'comm
 **Modified question for Jasmine:**
 
 Look at the bullet list in paragraph 2.
-Lowe lists things that a good definition of community should explain.
+Count the bullet points. Lowe lists things that a good definition of community should explain.
 
-**Sentence starter:** "In paragraph 2, Lowe lists _____ things that a definition of community needs to explain. This connects to paragraph 1 because _____."
+**Sentence starter:** "In paragraph 2, Lowe lists six things that a definition of community needs to explain. This connects to paragraph 1 because _____."
+
+*Expected direction: The list supports Lowe's claim that people don't define 'community' clearly, by showing what a good definition must cover.*
 ---
 
 ## DR-1C: Turn & Talk
@@ -50,9 +52,11 @@ Lowe lists things that a good definition of community should explain.
 
 Look at the bullet list in paragraph 2. Find THREE traits of a community.
 Fill in:
-1. There are many __________ kinds of communities (like places, religions, or interests).
-2. Communities can make people feel __________.
+1. There are many different kinds of communities (like places, religions, or __________).
+2. Communities can make people feel __________ and like they belong.
 3. Communities shape what people think is __________ and __________.
+
+*Expected answers: (1) interests/shared practices, (2) togetherness/positive, (3) good, bad*
 ---
 
 ## DR-2A: Write
@@ -68,7 +72,9 @@ He uses Newcastle as an example. In paragraphs 5-6, find:
 - What does Lowe DO to be part of Newcastle's community? (list 2 things)
 - How does being part of Newcastle make him FEEL? (list 1 feeling)
 
-**Sentence starter:** "Lowe's example supports his definition because he shows that _____. For example, he _____."
+**Sentence starter:** "Lowe's example supports his definition because Newcastle's shared story is part of who he is. For example, he _____ and _____."
+
+*Expected direction: He shows people around the city, feels pride/at home when hearing the accent, attends football matches, adopted Newcastle character traits. These show the community's story is part of his identity.*
 ---
 
 ## DR-2B: Turn & Talk
@@ -100,7 +106,11 @@ Both lists have 6 bullet points.
 
 **Question:** Why did Lowe write TWO lists?
 - The first list says what a definition NEEDS to do
-- The second list shows that his definition __________ each of those things
+- The second list shows that his definition **meets** each of those requirements
+
+In your own words: Why does Lowe go through each trait a second time?
+
+*Expected answer: Lowe tests his definition against the 6 criteria from paragraph 2 to prove it works.*
 ---
 
 ## DR-3B: Write
@@ -119,6 +129,8 @@ Choose 3 of these traits and explain in your own words:
 | Different types of communities | A "shared story" can be about a place, religion, or __________ |
 | Positive feelings | Being part of a shared story makes people feel __________ |
 | Part of many communities | People can have more than one __________ |
+
+*Expected answers: (1) any other social practice/interest, (2) like they belong / part of something larger / togetherness, (3) identity-forming story / shared story*
 ---
 
 ## DR-4: Find Evidence
@@ -227,6 +239,12 @@ Self-Checklist: Did I fully answer the prompt? Did I include at least two detail
 - Analysis: "This shows that an identity-forming narrative is _____ because _____."
 
 **Unit vocabulary to include:** narrative, aspect, moral, specific
+
+*Expected answer direction:*
+*- Claim: ...he means that a community shares a story so important it becomes part of who they are.*
+*- Evidence #1: "Those people build the shared story archetypes of that community into their sense of themselves" (para 4).*
+*- Evidence #2: Lowe shows people around Newcastle, feels pride and at home hearing the accent (paras 5-6).*
+*- Analysis: An identity-forming narrative is a story that shapes a person's identity and worldview.*
 ---
 
 ## DISC-1: Student-Led Discussion

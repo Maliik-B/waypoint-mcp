@@ -35,3 +35,9 @@ Self-Checklist: Did I fully answer the prompt? Did I include at least two detail
 - Analysis: "This shows that an identity-forming narrative is _____ because _____."
 
 **Unit vocabulary to include:** narrative, aspect, moral, specific
+
+*Expected answer direction:*
+*- Claim: ...he means that a community shares a story so important it becomes part of who they are.*
+*- Evidence #1: "Those people build the shared story archetypes of that community into their sense of themselves" (para 4).*
+*- Evidence #2: Lowe shows people around Newcastle, feels pride and at home hearing the accent (paras 5-6).*
+*- Analysis: An identity-forming narrative is a story that shapes a person's identity and worldview.*

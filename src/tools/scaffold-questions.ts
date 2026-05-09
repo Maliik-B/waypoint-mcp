@@ -154,23 +154,27 @@ function scaffoldDuringReading(
       );
     } else if (q.id === "DR-1B") {
       lines.push("Look at the bullet list in paragraph 2.");
-      lines.push("Lowe lists things that a good definition of community should explain.");
+      lines.push("Count the bullet points. Lowe lists things that a good definition of community should explain.");
       lines.push("");
-      lines.push('**Sentence starter:** "In paragraph 2, Lowe lists _____ things that a definition of community needs to explain. This connects to paragraph 1 because _____."');
+      lines.push('**Sentence starter:** "In paragraph 2, Lowe lists six things that a definition of community needs to explain. This connects to paragraph 1 because _____."');
+      lines.push("");
+      lines.push("*Expected direction: The list supports Lowe's claim that people don't define 'community' clearly, by showing what a good definition must cover.*");
     } else if (q.id === "DR-1C") {
       lines.push(
         "Look at the bullet list in paragraph 2. Find THREE traits of a community."
       );
       lines.push("Fill in:");
       lines.push(
-        "1. There are many __________ kinds of communities (like places, religions, or interests)."
+        "1. There are many different kinds of communities (like places, religions, or __________)."
       );
       lines.push(
-        "2. Communities can make people feel __________."
+        "2. Communities can make people feel __________ and like they belong."
       );
       lines.push(
         "3. Communities shape what people think is __________ and __________."
       );
+      lines.push("");
+      lines.push("*Expected answers: (1) interests/shared practices, (2) togetherness/positive, (3) good, bad*");
     } else if (q.id === "DR-2A") {
       lines.push(
         "Lowe says a community is 'a group of people who share an identity-forming narrative' (paragraph 3)."
@@ -180,8 +184,10 @@ function scaffoldDuringReading(
       lines.push("- How does being part of Newcastle make him FEEL? (list 1 feeling)");
       lines.push("");
       lines.push(
-        '**Sentence starter:** "Lowe\'s example supports his definition because he shows that _____. For example, he _____."'
+        '**Sentence starter:** "Lowe\'s example supports his definition because Newcastle\'s shared story is part of who he is. For example, he _____ and _____."'
       );
+      lines.push("");
+      lines.push("*Expected direction: He shows people around the city, feels pride/at home when hearing the accent, attends football matches, adopted Newcastle character traits. These show the community's story is part of his identity.*");
     } else if (q.id === "DR-2B") {
       lines.push("Think about a community YOU are part of (your school, neighborhood, team, family, etc.).");
       lines.push("");
@@ -195,7 +201,11 @@ function scaffoldDuringReading(
       lines.push("");
       lines.push("**Question:** Why did Lowe write TWO lists?");
       lines.push("- The first list says what a definition NEEDS to do");
-      lines.push("- The second list shows that his definition __________ each of those things");
+      lines.push("- The second list shows that his definition **meets** each of those requirements");
+      lines.push("");
+      lines.push("In your own words: Why does Lowe go through each trait a second time?");
+      lines.push("");
+      lines.push("*Expected answer: Lowe tests his definition against the 6 criteria from paragraph 2 to prove it works.*");
     } else if (q.id === "DR-3B") {
       lines.push("In paragraph 8, Lowe checks his definition against 6 traits.");
       lines.push("Choose 3 of these traits and explain in your own words:");
@@ -211,6 +221,8 @@ function scaffoldDuringReading(
       lines.push(
         "| Part of many communities | People can have more than one __________ |"
       );
+      lines.push("");
+      lines.push("*Expected answers: (1) any other social practice/interest, (2) like they belong / part of something larger / togetherness, (3) identity-forming story / shared story*");
     } else if (q.id === "DR-4") {
       lines.push("The title asks TWO questions:");
       lines.push("1. **What** is community?");
@@ -419,6 +431,12 @@ function scaffoldShortAnswer(
     );
     lines.push("");
     lines.push("**Unit vocabulary to include:** narrative, aspect, moral, specific");
+    lines.push("");
+    lines.push("*Expected answer direction:*");
+    lines.push("*- Claim: ...he means that a community shares a story so important it becomes part of who they are.*");
+    lines.push('*- Evidence #1: "Those people build the shared story archetypes of that community into their sense of themselves" (para 4).*');
+    lines.push("*- Evidence #2: Lowe shows people around Newcastle, feels pride and at home hearing the accent (paras 5-6).*");
+    lines.push("*- Analysis: An identity-forming narrative is a story that shapes a person's identity and worldview.*");
   } else {
     // Intensive: partially filled in
     lines.push("**Fill in the blanks to complete your response:**");
@@ -449,6 +467,8 @@ function scaffoldShortAnswer(
     lines.push(
       "- [ ] Did I use unit vocabulary (narrative, aspect, moral, or specific)?"
     );
+    lines.push("");
+    lines.push("*Expected completed version: ...share a **story** that is so important that it becomes part of **who they are**. ...into their sense of **themselves**... how they see **the world**. ...part of the **Newcastle** community because he **shows people around the city / attends football matches / adopted their character traits**. ...shapes who people **are** and how they see the **world**.*");
   }
 
   return lines.join("\n");
