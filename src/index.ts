@@ -64,6 +64,10 @@ import {
   generateClassroomSummary,
   classroomSummarySchema,
 } from "./tools/classroom-summary.js";
+import {
+  generateSubCard,
+  subCardSchema,
+} from "./tools/sub-card.js";
 import { getPromptMessages } from "./prompts/index.js";
 
 const server = new McpServer({
@@ -406,6 +410,18 @@ server.tool(
   classroomSummarySchema.shape,
   async (params) => {
     const result = generateClassroomSummary(classroomSummarySchema.parse(params));
+    return {
+      content: [{ type: "text", text: result }],
+    };
+  }
+);
+
+server.tool(
+  "generate_sub_card",
+  "Generate a substitute teacher emergency card for a student with an IEP. Designed to be left in the substitute folder and read in under 2 minutes. Covers the student's behavioral pattern, legally required accommodations (simplified for someone with no IEP training), what to do if the student shuts down, and what strategies work. Optionally includes lesson-specific timing and materials notes. Subs typically receive NO IEP information -- this card fills that gap.",
+  subCardSchema.shape,
+  async (params) => {
+    const result = generateSubCard(subCardSchema.parse(params));
     return {
       content: [{ type: "text", text: result }],
     };

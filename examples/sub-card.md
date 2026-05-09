@@ -1,0 +1,72 @@
+# Substitute Teacher Card: IEP Student
+**Student:** Jasmine Bailey | **Grade:** 7th grade | **School:** Riverstone Prep Public Charter School
+**SE Teacher:** Marisol Gutierrez-Stone (contact the main office if needed)
+**Placement:** Full Inclusion Program (IEP services provided outside the general education classroom less than 21% of the time; 80% inclusion)
+
+*This student has an Individualized Education Program (IEP). The accommodations below are legally required. Please follow them even if the regular teacher's sub plans don't mention them.*
+
+## The One Thing to Know
+Jasmine Bailey has a Health Impairment that affects attention, focus, stamina, and task initiation. When she gets frustrated with classwork, she **does not act out**. Instead, she quietly shuts down: head on desk, repeated bathroom requests, or staring at a blank page. **This is not defiance -- it's her disability.**
+
+## What She Needs (Required by Law)
+
+### Before the Lesson
+- Seat her in the **front of the room**, near where you'll be standing
+- Give her any **printed handouts or notes** the regular teacher left for her (check the IEP folder on the desk)
+
+### During the Lesson
+- **Repeat directions** to her individually after giving them to the class
+- **Check in every 10 minutes**: Walk by her desk, glance at her work, give a quick nod or thumbs up
+- If she looks lost, remind her: "What's the question asking? Where in the text might you find the answer?"
+- She gets **scheduled breaks**: one after every 15-20 minutes of work (1-2 minutes, at her desk or water fountain)
+
+### If She Shuts Down
+If you see her head go down, she stops writing, or she asks to go to the bathroom more than once:
+
+1. **Don't call her out in front of the class.** Walk to her desk quietly.
+2. **Offer a break**: "Take a minute. Get some water. I'll check back with you."
+3. **Lower the bar**: "Just try the first question. You can skip the rest for now."
+4. **If she stays shut down for more than 5 minutes**, send her to the main office to check in with guidance. This is part of her support plan.
+
+**Do NOT:** Take away recess/privileges, send her to the hall alone, or tell her to "just try harder." These will make it worse.
+
+## What Works With Her
+- **Specific praise**: "I noticed you went back to the text to find your answer. That's exactly what you should do." (not "good job")
+- **Peer pairing**: She works better with a partner than alone. Pair her with a patient classmate.
+- **Choice**: "Would you rather work on this here, or move to the back table?" Giving her control helps.
+- **Sentence starters**: If she's staring at a blank page for writing, give her the first few words: "The author is saying that..."
+
+## Today's Lesson Notes
+**Lesson:** What is 'Community' and why is it important?
+**Duration:** 45 minutes | **Subject:** ELA | **Standard:** RI.7.2
+
+### Quick Lesson Flow
+| Time | What's Happening | Watch For |
+| --- | --- | --- |
+| 0-5 min | Intro: vocabulary and reading purpose | She should have a vocab reference sheet |
+| 5-20 min | Reading article together + with partner | Pair her with someone patient |
+| 20-28 min | Multiple choice questions (independent) | Check in at minute 25. She can use the text. |
+| 28-30 min | **BREAK** | Let her get water or stretch |
+| 30-40 min | Writing prompt (independent) | **HIGHEST RISK.** If she hasn't started by minute 35, offer to let her finish tomorrow. |
+| 40-45 min | Discussion with partner | She usually does well here. Pair with a friend. |
+
+### Materials in Her Folder
+The regular teacher should have left these in the IEP materials folder:
+- Graphic organizer (two-column table about community traits)
+- Writing scaffold (step-by-step guide for the short answer)
+- Schedule card (lesson timeline with breaks marked)
+- Vocabulary reference sheet
+
+## Quick Reference
+
+| | |
+| --- | --- |
+| **Student** | Jasmine Bailey |
+| **Disability** | Health Impairment |
+| **SE Teacher** | Marisol Gutierrez-Stone |
+| **Key pattern** | Frustration -> quiet shutdown (not defiance) |
+| **#1 strategy** | Specific praise + scheduled breaks |
+| **If stuck** | Lower the bar, offer choice, don't pressure |
+| **Emergency** | Send to guidance (main office) |
+
+*Thank you for supporting this student. If you have questions, the main office can reach her SE teacher.*

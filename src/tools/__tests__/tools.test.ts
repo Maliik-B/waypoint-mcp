@@ -22,6 +22,7 @@ import { exportMaterials } from "../export-materials.js";
 import { generateProgressDataSheet } from "../progress-collector.js";
 import { generateTakeHome } from "../take-home.js";
 import { generateClassroomSummary } from "../classroom-summary.js";
+import { generateSubCard } from "../sub-card.js";
 
 describe("generate_lesson_modifications", () => {
   it("produces UDL-organized modifications for the full lesson", () => {
@@ -328,5 +329,35 @@ describe("generate_classroom_summary", () => {
     expect(result).toContain("Completed MC + SA");
     expect(result).toContain("Shutdown");
     expect(result).toContain("take-home");
+  });
+});
+
+describe("generate_sub_card", () => {
+  it("produces a substitute teacher card", () => {
+    const result = generateSubCard({} as any);
+    expect(result).toContain("Substitute Teacher Card");
+    expect(result).toContain("Jasmine Bailey");
+    expect(result).toContain("The One Thing to Know");
+    expect(result).toContain("What She Needs");
+    expect(result).toContain("If She Shuts Down");
+    expect(result).toContain("What Works");
+  });
+
+  it("emphasizes this is not defiance", () => {
+    const result = generateSubCard({} as any);
+    expect(result).toContain("not defiance");
+  });
+
+  it("includes lesson-specific notes by default", () => {
+    const result = generateSubCard({} as any);
+    expect(result).toContain("Today's Lesson Notes");
+    expect(result).toContain("HIGHEST RISK");
+    expect(result).toContain("Materials in Her Folder");
+  });
+
+  it("excludes lesson notes when disabled", () => {
+    const result = generateSubCard({ include_lesson_specifics: false });
+    expect(result).not.toContain("Today's Lesson Notes");
+    expect(result).toContain("The One Thing to Know");
   });
 });
