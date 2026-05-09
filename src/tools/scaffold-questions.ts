@@ -42,10 +42,11 @@ export const scaffoldQuestionSchema = z.object({
 
 export type ScaffoldQuestionInput = z.infer<typeof scaffoldQuestionSchema>;
 
-export function scaffoldQuestion(input: ScaffoldQuestionInput): string {
+export function scaffoldQuestion(rawInput: ScaffoldQuestionInput): string {
+  const input = scaffoldQuestionSchema.parse(rawInput);
   const iep = jasmineBaileyIEP;
   const lesson = communityLesson;
-  const isTeacherMode = (input.mode ?? "teacher") === "teacher";
+  const isTeacherMode = input.mode === "teacher";
 
   const sections: string[] = [];
 
