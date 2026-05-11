@@ -299,6 +299,17 @@ The resource URI scheme (`iep://{student-slug}/{section}`, `lesson://{lesson-slu
 
 **Accommodation mappings**: The accommodation-to-activity mappings are hand-crafted for this lesson. In production, Claude would generate these dynamically by cross-referencing the accommodation list with the lesson activities. The hand-crafted versions demonstrate what "specific" and "actionable" actually look like for a teacher.
 
+### Prompt Design Constraints
+
+Every tool and prompt enforces specificity rules that prevent Claude from producing generic UDL platitudes:
+
+1. **Ground every modification in both documents.** Each recommendation must cite a specific IEP element (accommodation name, goal benchmark, or present-level finding) AND a specific lesson element (paragraph number, question ID, activity minute range). "Scaffold the reading" is not allowed; "Before paragraph 3, pre-teach *narrative* on a vocabulary card" is.
+2. **Walk the lesson in pacing order.** Output follows the teacher's actual timeline (Intro 0-5 min, Reading 5-20 min, Independent Practice 20-40 min, Discussion 40-45 min), so they can read it linearly and know what to do next.
+3. **Calibrate to assessment data, not just the disability label.** Jasmine reads at Grade 3 (iReady), but her Informational Text Comprehension is Grade 2. The tools use these specific numbers to determine scaffolding intensity, not "Health Impairment" generically.
+4. **Anticipate the behavioral cycle.** Jasmine's pattern (frustration -> avoidance -> shutdown) means proactive check-ins at risk points, not reactive intervention after she's already disengaged. Self-regulation checkpoints are timed to lesson transitions, not arbitrary intervals.
+5. **Separate teacher and student output.** Scaffolds and materials have a `mode` parameter (`teacher`/`student`). Teacher mode includes answer keys and implementation notes; student mode produces clean handouts ready to photocopy. This mirrors how real curriculum materials always separate editions.
+6. **End with actionable materials.** Every workflow ends with a printable artifact: a checklist, a data sheet, a graphic organizer, or a prep summary. The teacher walks away with something to use tomorrow, not a wall of advice to interpret.
+
 ---
 
 ## Example Output 1: Accommodation-Activity Matrix with Self-Regulation Checkpoints
