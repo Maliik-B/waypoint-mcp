@@ -316,7 +316,7 @@ async function main() {
     'Lesson:   "What is Community?" by Toby Lowe (45 min ELA)',
     "IEP:      11 accommodations, 3 modifications, 3 goals",
     "",
-    "10 tools  |  12 resources  |  6 prompts  |  48 tests",
+    "10 tools  |  12 resources  |  6 prompts",
     "TypeScript + Zod  |  Model Context Protocol SDK",
     "",
     "Each tool below produces output a teacher can use immediately.",
@@ -344,7 +344,7 @@ async function main() {
   await sectionHeader(
     3,
     "Student Materials Packet",
-    "A print-ready packet for Jasmine. No answer keys -- clean handouts for photocopying."
+    "A print-ready packet for Jasmine. No answer keys, just clean handouts for photocopying."
   );
   await printWithPacing(formatForTerminal(exportMaterials({ mode: "student" } as any)));
 

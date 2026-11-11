@@ -17,7 +17,7 @@
  * - Legally sufficient (covers all mandated accommodations)
  *
  * It deliberately excludes diagnostic details and focuses on WHAT TO DO,
- * not WHY — a sub doesn't need to understand the IEP to follow the card.
+ * not WHY: a sub doesn't need to understand the IEP to follow the card.
  */
 
 import { z } from "zod";

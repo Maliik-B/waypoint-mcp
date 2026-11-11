@@ -23,9 +23,9 @@
 
 Out of 11 legally mandated IEP accommodations, this lesson plan currently:
 
-- **Fully addresses 2/11** — These accommodations are built into the lesson structure and require no additional planning.
-- **Partially addresses 6/11** — The lesson creates opportunities for these accommodations but doesn't explicitly plan for them. The teacher or SE teacher must actively implement them (e.g., choosing to repeat directions even though the lesson doesn't prompt it).
-- **Has no plan for 3/11** — These accommodations are legally required but completely absent from the lesson. Failing to implement these risks a compliance violation. See recommendations below.
+- **Fully addresses 2/11:** These accommodations are built into the lesson structure and require no additional planning.
+- **Partially addresses 6/11:** The lesson creates opportunities for these accommodations but doesn't explicitly plan for them. The teacher or SE teacher must actively implement them (e.g., choosing to repeat directions even though the lesson doesn't prompt it).
+- **Has no plan for 3/11:** These accommodations are legally required but completely absent from the lesson. Failing to implement these risks a compliance violation. See recommendations below.
 
 **Bottom line:** This lesson needs 3 implementation plans added before it is compliant with Jasmine's IEP. The highest-risk gaps are the timing accommodations (frequent breaks and scheduled breaks), which are critical for preventing the frustration-shutdown cycle.
 

@@ -1,5 +1,5 @@
 /**
- * Tests for all 10 Waypoint MCP tools + sanitization utilities (46 tests).
+ * Tests for all 10 Waypoint MCP tools + sanitization utilities.
  *
  * Each test verifies:
  * 1. The tool runs without throwing
@@ -8,7 +8,7 @@
  * 4. No generic fallback text appears where specific mappings should exist
  *
  * Tests call functions with partial params (cast as any) to verify that
- * Zod schema parsing applies defaults correctly — this mirrors how the
+ * Zod schema parsing applies defaults correctly. This mirrors how the
  * MCP server calls tools when Claude omits optional parameters.
  */
 

@@ -546,7 +546,7 @@ src/
     take-home.ts               # Modified take-home for unfinished classwork
     classroom-summary.ts       # Multi-student classroom-at-a-glance
     sub-card.ts                # Substitute teacher emergency card
-    __tests__/tools.test.ts    # 48 tests: tools + sanitization + error handling
+    __tests__/tools.test.ts    # Tests: tools + sanitization + error handling
   prompts/
     index.ts              # 6 prompt templates for teacher workflows
 data/
