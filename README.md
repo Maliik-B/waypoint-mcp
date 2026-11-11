@@ -451,6 +451,8 @@ is "a group of people who share an identity-forming narrative." [RI.2]
 **Unit vocabulary to include:** narrative, aspect, moral, specific
 ```
 
+This scaffolding is calibrated to Jasmine's specific needs: she reads at Grade 3 but the text is Grade 7. The graphic organizer breaks the open-ended prompt into sequential steps (matching her IEP benchmark for finding textual evidence), the paragraph references reduce the cognitive load of searching the full text, and the sentence starters address her 50% independent writing accuracy by giving her a structure to fill in rather than a blank page.
+
 ## Example Output 3: Teacher Prep Summary
 
 The `generate_teacher_prep_summary` tool produces a printable one-page reference. Here's an excerpt:
@@ -481,10 +483,6 @@ The `generate_teacher_prep_summary` tool produces a printable one-page reference
 ```
 
 See [`examples/teacher-prep-summary.md`](examples/teacher-prep-summary.md) for the complete output.
-
----
-
-This scaffolding is calibrated to Jasmine's specific needs: she reads at Grade 3 but the text is Grade 7. The graphic organizer breaks the open-ended prompt into sequential steps (matching her IEP benchmark for finding textual evidence), the paragraph references reduce the cognitive load of searching the full text, and the sentence starters address her 50% independent writing accuracy by giving her a structure to fill in rather than a blank page.
 
 ---
 
