@@ -3,7 +3,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Node](https://img.shields.io/badge/node-%3E%3D18-blue)
-![MCP](https://img.shields.io/badge/MCP-1.0-purple)
+![MCP SDK](https://img.shields.io/badge/MCP_SDK-1.12-purple)
 
 An MCP server that helps teachers differentiate instruction for students with Individualized Education Programs (IEPs). Given a lesson and a student's IEP, the server provides Claude with the structured context it needs to produce **specific, actionable instructional modifications** that a teacher can use in the classroom without further editing.
 
@@ -275,7 +275,7 @@ Includes: "The One Thing to Know" (behavioral pattern), required accommodations 
 
 ### Multi-Student Design
 
-The resource URI scheme (`iep://{student-slug}/{section}`, `lesson://{lesson-slug}/{section}`) is designed for multiple students and lessons. Adding a second student (e.g., `iep://marcus-chen/profile`) or lesson (e.g., `lesson://photosynthesis/overview`) requires only new data files and resource registrations. All tools receive student/lesson context through the resources rather than hardcoded references, so the same `scaffold_question` tool works for any student-lesson combination.
+The resource URI scheme (`iep://{student-slug}/{section}`, `lesson://{lesson-slug}/{section}`) is designed for multiple students and lessons, so on the resource side a second student (e.g., `iep://marcus-chen/profile`) or lesson (e.g., `lesson://photosynthesis/overview`) takes only new data files and resource registrations. The tools aren't there yet: this build ships one anonymized student, and each tool imports that student's IEP data directly. Routing the tools through the resources is the step that would let the same `scaffold_question` tool serve any student-lesson combination.
 
 ### Prompts: Pre-Built Workflows
 
