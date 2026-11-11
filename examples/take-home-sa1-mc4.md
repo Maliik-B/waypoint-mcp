@@ -18,7 +18,7 @@ Jasmine Bailey is working on a reading comprehension lesson about what makes a c
 - Read the text excerpts aloud if she asks (she benefits from hearing text read aloud)
 - Encourage her to use the sentence starters rather than staring at a blank page
 - If she gets frustrated, it's okay to take a break and come back to it
-- She does NOT need to write perfect paragraphs -- getting her ideas down is the goal
+- She does NOT need to write perfect paragraphs; getting her ideas down is the goal
 
 *Jasmine Bailey's teacher can be reached at school for any questions.*
 
@@ -49,7 +49,7 @@ Jasmine Bailey is working on a reading comprehension lesson about what makes a c
 1. One sentence explaining what "identity-forming narrative" means (use the text excerpts above)
 2. One example from the article that shows what this looks like (hint: look at the Newcastle paragraphs)
 
-*That's it -- two things. You can write more if you want, but two is enough.*
+*That's it: two things. You can write more if you want, but two is enough.*
 
 ### Sentence Starters (pick one to get started)
 

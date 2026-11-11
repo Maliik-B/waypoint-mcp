@@ -125,7 +125,7 @@ export function generateClassroomSummary(
 
     if (students.length === 1) {
       sections.push(
-        "*With additional IEP students loaded, this matrix shows accommodation overlaps -- e.g., if both Jasmine and another student need 'Frequent breaks,' one scheduled break benefits both. If one student needs quiet and another needs movement breaks, the timeline flags the conflict.*"
+        "*With additional IEP students loaded, this matrix shows accommodation overlaps. For example, if both Jasmine and another student need 'Frequent breaks,' one scheduled break benefits both. If one student needs quiet and another needs movement breaks, the timeline flags the conflict.*"
       );
       sections.push("");
     }

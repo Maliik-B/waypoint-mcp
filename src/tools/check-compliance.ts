@@ -216,7 +216,7 @@ function analyzeCompliance(): ComplianceItem[] {
       notes:
         "Not built into lesson structure; critical for writing tasks",
       recommendation:
-        "Create a laminated 'Pause, Plan, Proceed' card for Jasmine's desk. Before each writing question (DR-1B, DR-2A, DR-3B, SA-1), cue Jasmine: 'Pause -- what is the question asking? Plan -- find the paragraph. Proceed -- write.' The SE teacher can model this during the first During Reading question.",
+        "Create a laminated 'Pause, Plan, Proceed' card for Jasmine's desk. Before each writing question (DR-1B, DR-2A, DR-3B, SA-1), cue Jasmine: 'Pause: what is the question asking? Plan: find the paragraph. Proceed: write.' The SE teacher can model this during the first During Reading question.",
     },
     {
       accommodation: "Copy of teacher's notes",
@@ -275,7 +275,7 @@ function analyzeCompliance(): ComplianceItem[] {
       notes:
         "SE teacher is present daily but check-in timing not specified in lesson",
       recommendation:
-        "SE teacher checks in at 4 specific points: (1) End of intro -- preview vocabulary, (2) During partner reading -- comprehension check, (3) Start of Independent Practice -- restate directions, (4) After MC questions -- review answers before writing prompt. Each check-in is 30-60 seconds.",
+        "SE teacher checks in at 4 specific points: (1) End of intro: preview vocabulary, (2) During partner reading: comprehension check, (3) Start of Independent Practice: restate directions, (4) After MC questions: review answers before writing prompt. Each check-in is 30-60 seconds.",
     },
     {
       accommodation: "Reminder to remain engaged",

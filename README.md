@@ -358,8 +358,8 @@ with grade-level text (she reads at Grade 3; this is a 7th-grade text).
 
 **During Reading** (Min 5-20)
 > Provide a graphic organizer for the paragraph 2 bullet list:
-> a table with two columns -- 'Trait of Community' and 'How Lowe
-> Tests It in Para 8' -- with the 6 traits pre-filled in the left
+> a table with two columns ('Trait of Community' and 'How Lowe
+> Tests It in Para 8') with the 6 traits pre-filled in the left
 > column. Jasmine fills in the right column as she reads paragraph 8.
 
 **Independent Practice** (Min 20-40)
@@ -391,7 +391,7 @@ already know?" This grounds her in familiar content before
 unfamiliar text.
 
 **Minute 10 (During Whole-Class Reading, Paras 1-2)**
-*Trigger:* After first Think & Share question -- this is when she
+*Trigger:* After first Think & Share question: this is when she
 may feel overwhelmed by the dense paragraph 2 bullet list
 *Action:* Proximity check: Move near Jasmine's seat. Whisper:
 "You're doing great following along. Remember you can use your
@@ -403,13 +403,13 @@ a brief movement break if she shows signs of disengagement.
 4 MC questions and a short answer.
 *Action:* Before independent work begins, 1:1 check-in: "Jasmine,
 you have 4 multiple choice questions and a writing prompt. Let's
-start with the multiple choice -- they're about what we just read
+start with the multiple choice. They're about what we just read
 together. You can look back at the text anytime." Provide her
 modified question sheet with paragraph references. Check back
 after 5 minutes.
 
 **Minute 32 (Mid-Independent Practice)**
-*Trigger:* 10 minutes into independent work -- stamina check.
+*Trigger:* 10 minutes into independent work: stamina check.
 *Action:* Scheduled break: "Jasmine, take a 2-minute break. Get
 some water or do a stretch. When you come back, you just need to
 finish the writing prompt." Offer the graphic organizer for the

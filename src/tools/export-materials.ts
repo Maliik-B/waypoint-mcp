@@ -4,7 +4,7 @@
  * Bundles all the materials a teacher needs for a lesson into a single
  * print-ready Markdown document. This includes the graphic organizer,
  * pause-plan-proceed card, lesson schedule card, writing scaffold,
- * and vocabulary reference -- all formatted for clean printing.
+ * and vocabulary reference, all formatted for clean printing.
  *
  * Real-world context: Teachers print materials before class. Having one
  * document to print (instead of generating each tool's output separately)

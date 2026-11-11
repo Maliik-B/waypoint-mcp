@@ -19,7 +19,7 @@
  * The resource URI scheme (iep://{student-slug}/{section}, lesson://{lesson-slug}/{section})
  * is designed for multiple students and lessons. In production, adding a second
  * student (e.g., iep://marcus-chen/profile) or lesson (e.g., lesson://photosynthesis/overview)
- * requires only new data files and resource registrations -- all tools accept the
+ * requires only new data files and resource registrations, since all tools accept the
  * student/lesson context through the resources, not hardcoded references.
  */
 
@@ -436,7 +436,7 @@ server.tool(
 
 server.tool(
   "generate_sub_card",
-  "Generate a substitute teacher emergency card for a student with an IEP. Designed to be left in the substitute folder and read in under 2 minutes. Covers the student's behavioral pattern, legally required accommodations (simplified for someone with no IEP training), what to do if the student shuts down, and what strategies work. Optionally includes lesson-specific timing and materials notes. Subs typically receive NO IEP information -- this card fills that gap.",
+  "Generate a substitute teacher emergency card for a student with an IEP. Designed to be left in the substitute folder and read in under 2 minutes. Covers the student's behavioral pattern, legally required accommodations (simplified for someone with no IEP training), what to do if the student shuts down, and what strategies work. Optionally includes lesson-specific timing and materials notes. Subs typically receive NO IEP information, and this card fills that gap.",
   subCardSchema.shape,
   async (params) => {
     try {

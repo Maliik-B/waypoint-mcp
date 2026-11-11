@@ -12,7 +12,7 @@
  * - Uses lighter scaffolding that doesn't require adult prompting
  * - Removes time pressure framing
  *
- * This is NOT homework -- it's completion of classwork with modified
+ * This is NOT homework; it's completion of classwork with modified
  * expectations for the independent setting.
  */
 
@@ -88,7 +88,7 @@ export function generateTakeHome(rawInput: TakeHomeInput): string {
       "- If she gets frustrated, it's okay to take a break and come back to it"
     );
     sections.push(
-      "- She does NOT need to write perfect paragraphs -- getting her ideas down is the goal"
+      "- She does NOT need to write perfect paragraphs; getting her ideas down is the goal"
     );
     sections.push("");
     sections.push(
@@ -213,7 +213,7 @@ function buildTakeHomeShortAnswer(
     );
     lines.push("");
     lines.push(
-      "*That's it -- two things. You can write more if you want, but two is enough.*"
+      "*That's it: two things. You can write more if you want, but two is enough.*"
     );
   } else {
     lines.push(`**${question.questionText.split("\n")[0]}**`);

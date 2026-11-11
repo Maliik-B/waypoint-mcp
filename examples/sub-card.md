@@ -7,7 +7,7 @@
 *This student has an Individualized Education Program (IEP). The accommodations below are legally required. Please follow them even if the regular teacher's sub plans don't mention them.*
 
 ## The One Thing to Know
-Jasmine Bailey has a Health Impairment that affects attention, focus, stamina, and task initiation. When she gets frustrated with classwork, she **does not act out**. Instead, she quietly shuts down: head on desk, repeated bathroom requests, or staring at a blank page. **This is not defiance -- it's her disability.**
+Jasmine Bailey has a Health Impairment that affects attention, focus, stamina, and task initiation. When she gets frustrated with classwork, she **does not act out**. Instead, she quietly shuts down: head on desk, repeated bathroom requests, or staring at a blank page. **This is not defiance. It's her disability.**
 
 ## What She Needs (Required by Law)
 

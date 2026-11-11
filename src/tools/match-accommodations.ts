@@ -116,14 +116,14 @@ export function matchAccommodations(rawInput: MatchAccommodationsInput): string 
       {
         time: "Minute 10 (During Whole-Class Reading, Paras 1-2)",
         trigger:
-          "After first Think & Share question -- this is when she may feel overwhelmed by the dense paragraph 2 bullet list",
+          "After first Think & Share question: this is when she may feel overwhelmed by the dense paragraph 2 bullet list",
         action:
           'Proximity check: Move near Jasmine\'s seat. Whisper: "You\'re doing great following along. Remember you can use your reference sheet if the bullet points feel like a lot." Offer her a brief movement break if she shows signs of disengagement (head lowering, fidgeting).',
       },
       {
         time: "Minute 15 (Transition to Partner Reading)",
         trigger:
-          "Partner reading of paragraphs 3-7 -- she may disengage if partner reads too fast or she can't follow",
+          "Partner reading of paragraphs 3-7: she may disengage if partner reads too fast or she can't follow",
         action:
           'Pair her with a patient, supportive peer. Before they start: "Jasmine, your job is to find where Lowe talks about what he DOES as part of Newcastle\'s community. Circle those actions." This gives her a concrete, achievable task within the reading.',
       },
@@ -132,19 +132,19 @@ export function matchAccommodations(rawInput: MatchAccommodationsInput): string 
         trigger:
           "HIGHEST RISK POINT: Transition to independent work with 4 MC questions and a short answer. This is where shutdown is most likely.",
         action:
-          'Before independent work begins, 1:1 check-in: "Jasmine, you have 4 multiple choice questions and a writing prompt. Let\'s start with the multiple choice -- they\'re about what we just read together. You can look back at the text anytime." Provide her modified question sheet with paragraph references. Check back after 5 minutes.',
+          'Before independent work begins, 1:1 check-in: "Jasmine, you have 4 multiple choice questions and a writing prompt. Let\'s start with the multiple choice. They\'re about what we just read together. You can look back at the text anytime." Provide her modified question sheet with paragraph references. Check back after 5 minutes.',
       },
       {
         time: "Minute 32 (Mid-Independent Practice)",
         trigger:
-          "10 minutes into independent work -- stamina check. If she has low reading and writing stamina, this is when it fades.",
+          "10 minutes into independent work: stamina check. If she has low reading and writing stamina, this is when it fades.",
         action:
           'Scheduled break: "Jasmine, take a 2-minute break. Get some water or do a stretch. When you come back, you just need to finish the writing prompt." Offer the graphic organizer for the short answer if she hasn\'t started it yet.',
       },
       {
         time: "Minute 40 (Discussion Transition)",
         trigger:
-          "Transition to student-led discussion -- this could be energizing (she likes peer interaction) or overwhelming",
+          "Transition to student-led discussion: this could be energizing (she likes peer interaction) or overwhelming",
         action:
           'Pair with a peer she\'s comfortable with. Give her the first discussion question to look at 30 seconds before everyone starts: "Think about Riverstone Prep as a community. What\'s something courteous people do here?" This connects to her personal experience and lets her prep a response.',
       },
@@ -218,13 +218,13 @@ function getAccommodationMappings(
         activity: "During Reading",
         timing: "Min 5-20",
         implementation:
-          "Before each written response question (DR-1B, DR-2A, DR-3B), cue Jasmine: 'Pause -- what is the question asking? Plan -- where in the text will you find the answer? Proceed -- write your answer.' Provide a small laminated 'Pause, Plan, Proceed' card at her desk.",
+          "Before each written response question (DR-1B, DR-2A, DR-3B), cue Jasmine: 'Pause: what is the question asking? Plan: where in the text will you find the answer? Proceed: write your answer.' Provide a small laminated 'Pause, Plan, Proceed' card at her desk.",
       },
       {
         activity: "Independent Practice",
         timing: "Min 20-40",
         implementation:
-          "For the short answer prompt, model the process: 'Pause -- the question asks what Lowe means by identity-forming narrative. Plan -- paragraphs 3, 4, and 9 explain this. Proceed -- write your claim first.'",
+          "For the short answer prompt, model the process: 'Pause: the question asks what Lowe means by identity-forming narrative. Plan: paragraphs 3, 4, and 9 explain this. Proceed: write your claim first.'",
       },
     ],
     "Copy of teacher's notes": [
@@ -246,7 +246,7 @@ function getAccommodationMappings(
         activity: "During Reading",
         timing: "Min 5-20",
         implementation:
-          "Provide a graphic organizer for the paragraph 2 bullet list: a table with two columns -- 'Trait of Community' and 'How Lowe Tests It in Para 8' -- with the 6 traits pre-filled in the left column. Jasmine fills in the right column as she reads paragraph 8.",
+          "Provide a graphic organizer for the paragraph 2 bullet list: a table with two columns ('Trait of Community' and 'How Lowe Tests It in Para 8') with the 6 traits pre-filled in the left column. Jasmine fills in the right column as she reads paragraph 8.",
       },
       {
         activity: "Independent Practice",
@@ -294,7 +294,7 @@ function getAccommodationMappings(
         activity: "Independent Practice",
         timing: "Min 20-40",
         implementation:
-          "Check in after Jasmine completes MC questions (before starting short answer). Review her MC answers together -- if she got Q1 or Q2 wrong, guide her back to the relevant paragraph to self-correct before starting the writing prompt.",
+          "Check in after Jasmine completes MC questions (before starting short answer). Review her MC answers together. If she got Q1 or Q2 wrong, guide her back to the relevant paragraph to self-correct before starting the writing prompt.",
       },
     ],
     "Scheduled breaks": [
@@ -302,7 +302,7 @@ function getAccommodationMappings(
         activity: "Full Lesson",
         timing: "Min 0-45",
         implementation:
-          "Two scheduled breaks: (1) After During Reading Questions at minute 20 before Independent Practice, (2) After MC questions at approximately minute 30 before the short answer. Mark these on Jasmine's task checklist so she can see the breaks coming -- knowing a break is ahead helps sustain focus.",
+          "Two scheduled breaks: (1) After During Reading Questions at minute 20 before Independent Practice, (2) After MC questions at approximately minute 30 before the short answer. Mark these on Jasmine's task checklist so she can see the breaks coming, since knowing a break is ahead helps sustain focus.",
       },
     ],
     "Reminder to remain engaged": [
@@ -373,7 +373,7 @@ function getModificationMappings(
         activity: "Independent Practice",
         timing: "Min 20-40",
         implementation:
-          "Read MC questions aloud as a class before releasing students to work independently. For the short answer, allow Jasmine to first verbally explain her answer to the SE teacher, then write it down -- she comprehends better verbally in 1:1 settings.",
+          "Read MC questions aloud as a class before releasing students to work independently. For the short answer, allow Jasmine to first verbally explain her answer to the SE teacher, then write it down, since she comprehends better verbally in 1:1 settings.",
       },
     ],
     "Inclusion support": [

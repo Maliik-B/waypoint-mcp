@@ -29,7 +29,7 @@
 | Small group (as needed) | setting | YES | No |
 | Sit in the front of the room | setting | YES | No |
 
-*With additional IEP students loaded, this matrix shows accommodation overlaps -- e.g., if both Jasmine and another student need 'Frequent breaks,' one scheduled break benefits both. If one student needs quiet and another needs movement breaks, the timeline flags the conflict.*
+*With additional IEP students loaded, this matrix shows accommodation overlaps. For example, if both Jasmine and another student need 'Frequent breaks,' one scheduled break benefits both. If one student needs quiet and another needs movement breaks, the timeline flags the conflict.*
 
 ## Materials Preparation
 *Materials organized by whether they can be shared across students or need to be individualized.*

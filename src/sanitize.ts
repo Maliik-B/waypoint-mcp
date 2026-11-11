@@ -3,7 +3,7 @@
  *
  * IEP data contains legally protected PII (student names, disability
  * categories, behavioral descriptions). When this data flows into
- * Markdown output -- especially table cells -- special characters
+ * Markdown output (especially table cells), special characters
  * can break formatting or produce unintended rendering.
  *
  * These utilities ensure dynamic strings are safe for Markdown output

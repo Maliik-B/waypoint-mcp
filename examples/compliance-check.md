@@ -32,7 +32,7 @@ Out of 11 legally mandated IEP accommodations, this lesson plan currently:
 ## Recommendations for Gaps
 
 ### Reminders to pause, plan, proceed
-Create a laminated 'Pause, Plan, Proceed' card for Jasmine's desk. Before each writing question (DR-1B, DR-2A, DR-3B, SA-1), cue Jasmine: 'Pause -- what is the question asking? Plan -- find the paragraph. Proceed -- write.' The SE teacher can model this during the first During Reading question.
+Create a laminated 'Pause, Plan, Proceed' card for Jasmine's desk. Before each writing question (DR-1B, DR-2A, DR-3B, SA-1), cue Jasmine: 'Pause: what is the question asking? Plan: find the paragraph. Proceed: write.' The SE teacher can model this during the first During Reading question.
 
 ### Frequent breaks
 Schedule 2 brief breaks: (1) After During Reading Questions before Independent Practice (~min 20), (2) After MC questions before short answer (~min 30). Mark both on Jasmine's activity checklist so she can see them coming. Each break is 1-2 minutes: water, stretching, or a movement break.

@@ -63,7 +63,7 @@ export function generateSubCard(rawInput: SubCardInput): string {
   // Section 1: The one thing you need to know
   sections.push("## The One Thing to Know");
   sections.push(
-    `${iep.profile.name} has a Health Impairment that affects attention, focus, stamina, and task initiation. When she gets frustrated with classwork, she **does not act out**. Instead, she quietly shuts down: head on desk, repeated bathroom requests, or staring at a blank page. **This is not defiance -- it's her disability.**`
+    `${iep.profile.name} has a Health Impairment that affects attention, focus, stamina, and task initiation. When she gets frustrated with classwork, she **does not act out**. Instead, she quietly shuts down: head on desk, repeated bathroom requests, or staring at a blank page. **This is not defiance. It's her disability.**`
   );
   sections.push("");
 

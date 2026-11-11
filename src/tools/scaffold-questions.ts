@@ -342,7 +342,7 @@ function scaffoldMultipleChoice(
     if (q.id === "MC-1") {
       lines.push("**Step 1:** Cross out the answer that is clearly wrong:");
       lines.push(
-        "- C talks about 'describing life in Newcastle' -- is that what the WHOLE article is about? No. Cross out C."
+        "- C talks about 'describing life in Newcastle.' Is that what the WHOLE article is about? No. Cross out C."
       );
       lines.push(
         "**Step 2:** Now choose between A, B, and D. The article mostly:"

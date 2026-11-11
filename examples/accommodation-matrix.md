@@ -30,10 +30,10 @@ For each accommodation, the following shows exactly when and how to implement it
 ### [PRESENTATION] Reminders to pause, plan, proceed
 
 **During Reading** (Min 5-20)
-> Before each written response question (DR-1B, DR-2A, DR-3B), cue Jasmine: 'Pause -- what is the question asking? Plan -- where in the text will you find the answer? Proceed -- write your answer.' Provide a small laminated 'Pause, Plan, Proceed' card at her desk.
+> Before each written response question (DR-1B, DR-2A, DR-3B), cue Jasmine: 'Pause: what is the question asking? Plan: where in the text will you find the answer? Proceed: write your answer.' Provide a small laminated 'Pause, Plan, Proceed' card at her desk.
 
 **Independent Practice** (Min 20-40)
-> For the short answer prompt, model the process: 'Pause -- the question asks what Lowe means by identity-forming narrative. Plan -- paragraphs 3, 4, and 9 explain this. Proceed -- write your claim first.'
+> For the short answer prompt, model the process: 'Pause: the question asks what Lowe means by identity-forming narrative. Plan: paragraphs 3, 4, and 9 explain this. Proceed: write your claim first.'
 
 ### [PRESENTATION] Copy of teacher's notes
 
@@ -46,7 +46,7 @@ For each accommodation, the following shows exactly when and how to implement it
 ### [PRESENTATION] Reference sheets, graphic organizers, and checklists
 
 **During Reading** (Min 5-20)
-> Provide a graphic organizer for the paragraph 2 bullet list: a table with two columns -- 'Trait of Community' and 'How Lowe Tests It in Para 8' -- with the 6 traits pre-filled in the left column. Jasmine fills in the right column as she reads paragraph 8.
+> Provide a graphic organizer for the paragraph 2 bullet list: a table with two columns ('Trait of Community' and 'How Lowe Tests It in Para 8') with the 6 traits pre-filled in the left column. Jasmine fills in the right column as she reads paragraph 8.
 
 **Independent Practice** (Min 20-40)
 > For the short answer prompt, provide a structured writing checklist: (1) Write a claim answering the question, (2) Find evidence in paragraph 4 or 9, (3) Explain how the evidence connects to your claim. Also provide the Self-Checklist from the lesson enlarged and on a separate card.
@@ -70,7 +70,7 @@ For each accommodation, the following shows exactly when and how to implement it
 ### [TIMING] Scheduled breaks
 
 **Full Lesson** (Min 0-45)
-> Two scheduled breaks: (1) After During Reading Questions at minute 20 before Independent Practice, (2) After MC questions at approximately minute 30 before the short answer. Mark these on Jasmine's task checklist so she can see the breaks coming -- knowing a break is ahead helps sustain focus.
+> Two scheduled breaks: (1) After During Reading Questions at minute 20 before Independent Practice, (2) After MC questions at approximately minute 30 before the short answer. Mark these on Jasmine's task checklist so she can see the breaks coming, since knowing a break is ahead helps sustain focus.
 
 ### [SETTING] 1:1 check-ins
 
@@ -78,7 +78,7 @@ For each accommodation, the following shows exactly when and how to implement it
 > SE teacher checks in after paragraphs 1-2 questions and again during partner reading (paragraphs 3-7). Focus on comprehension: 'What has Lowe said so far about community?' If Jasmine can't summarize, re-read paragraph 3's definition together.
 
 **Independent Practice** (Min 20-40)
-> Check in after Jasmine completes MC questions (before starting short answer). Review her MC answers together -- if she got Q1 or Q2 wrong, guide her back to the relevant paragraph to self-correct before starting the writing prompt.
+> Check in after Jasmine completes MC questions (before starting short answer). Review her MC answers together. If she got Q1 or Q2 wrong, guide her back to the relevant paragraph to self-correct before starting the writing prompt.
 
 ### [SETTING] Reminder to remain engaged
 
@@ -112,7 +112,7 @@ For each accommodation, the following shows exactly when and how to implement it
 > For the Newcastle example (paragraphs 5-7): Have students watch a 1-minute clip of a Newcastle football match crowd (shows the community feeling visually). Or: draw a simple web on the board showing Lowe's connections to Newcastle (pride, accent, events, future). Jasmine can reference the visual web instead of re-reading paragraphs.
 
 **Independent Practice** (Min 20-40)
-> Read MC questions aloud as a class before releasing students to work independently. For the short answer, allow Jasmine to first verbally explain her answer to the SE teacher, then write it down -- she comprehends better verbally in 1:1 settings.
+> Read MC questions aloud as a class before releasing students to work independently. For the short answer, allow Jasmine to first verbally explain her answer to the SE teacher, then write it down, since she comprehends better verbally in 1:1 settings.
 
 ### [INSTRUCTION] Inclusion support
 
@@ -132,23 +132,23 @@ Based on Jasmine's pattern of academic frustration leading to shutdown, schedule
 *Action:* Quick 1:1 check-in: "Jasmine, before we start reading, let's look at the vocabulary words together. Which ones do you already know?" This grounds her in familiar content before unfamiliar text.
 
 **Minute 10 (During Whole-Class Reading, Paras 1-2)**
-*Trigger:* After first Think & Share question -- this is when she may feel overwhelmed by the dense paragraph 2 bullet list
+*Trigger:* After first Think & Share question: this is when she may feel overwhelmed by the dense paragraph 2 bullet list
 *Action:* Proximity check: Move near Jasmine's seat. Whisper: "You're doing great following along. Remember you can use your reference sheet if the bullet points feel like a lot." Offer her a brief movement break if she shows signs of disengagement (head lowering, fidgeting).
 
 **Minute 15 (Transition to Partner Reading)**
-*Trigger:* Partner reading of paragraphs 3-7 -- she may disengage if partner reads too fast or she can't follow
+*Trigger:* Partner reading of paragraphs 3-7: she may disengage if partner reads too fast or she can't follow
 *Action:* Pair her with a patient, supportive peer. Before they start: "Jasmine, your job is to find where Lowe talks about what he DOES as part of Newcastle's community. Circle those actions." This gives her a concrete, achievable task within the reading.
 
 **Minute 22 (Start of Independent Practice)**
 *Trigger:* HIGHEST RISK POINT: Transition to independent work with 4 MC questions and a short answer. This is where shutdown is most likely.
-*Action:* Before independent work begins, 1:1 check-in: "Jasmine, you have 4 multiple choice questions and a writing prompt. Let's start with the multiple choice -- they're about what we just read together. You can look back at the text anytime." Provide her modified question sheet with paragraph references. Check back after 5 minutes.
+*Action:* Before independent work begins, 1:1 check-in: "Jasmine, you have 4 multiple choice questions and a writing prompt. Let's start with the multiple choice. They're about what we just read together. You can look back at the text anytime." Provide her modified question sheet with paragraph references. Check back after 5 minutes.
 
 **Minute 32 (Mid-Independent Practice)**
-*Trigger:* 10 minutes into independent work -- stamina check. If she has low reading and writing stamina, this is when it fades.
+*Trigger:* 10 minutes into independent work: stamina check. If she has low reading and writing stamina, this is when it fades.
 *Action:* Scheduled break: "Jasmine, take a 2-minute break. Get some water or do a stretch. When you come back, you just need to finish the writing prompt." Offer the graphic organizer for the short answer if she hasn't started it yet.
 
 **Minute 40 (Discussion Transition)**
-*Trigger:* Transition to student-led discussion -- this could be energizing (she likes peer interaction) or overwhelming
+*Trigger:* Transition to student-led discussion: this could be energizing (she likes peer interaction) or overwhelming
 *Action:* Pair with a peer she's comfortable with. Give her the first discussion question to look at 30 seconds before everyone starts: "Think about Riverstone Prep as a community. What's something courteous people do here?" This connects to her personal experience and lets her prep a response.
 
 ## SE Teacher Coordination

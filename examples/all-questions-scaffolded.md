@@ -169,7 +169,7 @@ D. to give a clear and useful definition of community
 ### Scaffolded Version (moderate)
 
 **Step 1:** Cross out the answer that is clearly wrong:
-- C talks about 'describing life in Newcastle' -- is that what the WHOLE article is about? No. Cross out C.
+- C talks about 'describing life in Newcastle.' Is that what the WHOLE article is about? No. Cross out C.
 **Step 2:** Now choose between A, B, and D. The article mostly:
 - Talks about being part of multiple communities (A), OR
 - Shows how community shaped the author's life (B), OR
