@@ -1,7 +1,6 @@
 # Waypoint IEP Differentiation Server
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-blue)
-![Tests](https://img.shields.io/badge/tests-48%20passing-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Node](https://img.shields.io/badge/node-%3E%3D18-blue)
 ![MCP](https://img.shields.io/badge/MCP-1.0-purple)
@@ -250,7 +249,7 @@ Generates a modified take-home version of classwork the student didn't finish. G
 - Includes a parent/guardian note with context and "how you can help" guidance
 - Removes time pressure framing and ends with encouragement
 
-This is NOT additional homework -- it's completion of classwork with modified expectations for the unsupported home setting.
+This is NOT additional homework. It's completion of classwork with modified expectations for the unsupported home setting.
 
 #### `generate_classroom_summary`
 
